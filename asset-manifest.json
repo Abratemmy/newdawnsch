@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/newdawnsch/static/css/main.b9b44eb5.chunk.css",
+    "main.js": "/newdawnsch/static/js/main.364aa20c.chunk.js",
+    "main.js.map": "/newdawnsch/static/js/main.364aa20c.chunk.js.map",
+    "runtime-main.js": "/newdawnsch/static/js/runtime-main.0e90ba6b.js",
+    "runtime-main.js.map": "/newdawnsch/static/js/runtime-main.0e90ba6b.js.map",
+    "static/css/2.c283e5a0.chunk.css": "/newdawnsch/static/css/2.c283e5a0.chunk.css",
+    "static/js/2.5c66bd3c.chunk.js": "/newdawnsch/static/js/2.5c66bd3c.chunk.js",
+    "static/js/2.5c66bd3c.chunk.js.map": "/newdawnsch/static/js/2.5c66bd3c.chunk.js.map",
+    "index.html": "/newdawnsch/index.html",
+    "static/css/2.c283e5a0.chunk.css.map": "/newdawnsch/static/css/2.c283e5a0.chunk.css.map",
+    "static/css/main.b9b44eb5.chunk.css.map": "/newdawnsch/static/css/main.b9b44eb5.chunk.css.map",
+    "static/js/2.5c66bd3c.chunk.js.LICENSE.txt": "/newdawnsch/static/js/2.5c66bd3c.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/newdawnsch/static/media/background2.0a60249c.JPG",
+    "static/media/blog2.c7c13ce4.JPG": "/newdawnsch/static/media/blog2.c7c13ce4.JPG",
+    "static/media/cutural.78639f11.jpeg": "/newdawnsch/static/media/cutural.78639f11.jpeg",
+    "static/media/newdawnlogo.b00dd5b7.jpeg": "/newdawnsch/static/media/newdawnlogo.b00dd5b7.jpeg",
+    "static/media/school.968ba2f2.jpeg": "/newdawnsch/static/media/school.968ba2f2.jpeg",
+    "static/media/sciencelab.3512c60a.jpeg": "/newdawnsch/static/media/sciencelab.3512c60a.jpeg",
+    "static/media/slick-theme.css": "/newdawnsch/static/media/slick.c94f7671.ttf",
+    "static/media/sport.8f3233ee.jpeg": "/newdawnsch/static/media/sport.8f3233ee.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e90ba6b.js",
+    "static/css/2.c283e5a0.chunk.css",
+    "static/js/2.5c66bd3c.chunk.js",
+    "static/css/main.b9b44eb5.chunk.css",
+    "static/js/main.364aa20c.chunk.js"
+  ]
+}
