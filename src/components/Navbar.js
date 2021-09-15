@@ -40,7 +40,7 @@ function Navbar() {
                     <div className="navigation">
                         <ul className={click ? "nav-menu active" : "nav-menu"}>
                             <li className="nav-item">
-                                <NavLink to="/" exact  className="nav-links"onClick={handleClick}>Home</NavLink>
+                                <NavLink to="/newdawnsch" exact  className="nav-links"onClick={handleClick}>Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <div className="drop-plus">

@@ -5,7 +5,7 @@ import Home from '../pages/homepage/Home';
 const Router = ()=>(
     <Switch>
         
-        <Route exact path="/" component={Home} />
+        <Route exact path="/newdawnsch" component={Home} />
     </Switch>
 )
 export default Router
