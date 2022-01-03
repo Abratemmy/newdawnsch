@@ -8,7 +8,7 @@
     background: linear-gradient(180deg, rgba(31, 32, 32, 0.443), rgba(56, 58, 58, 0.443)),url("../../images/background2.JPG");
 }
 .background-pics{
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
 }
 .background-text p{
     font-family: var(--textFamily);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 35px;
 }
 /* home banner css */
@@ -36,7 +36,7 @@
     position: relative;
     top:-20px;
     background: var(--blueColor);
-    padding: 20px 0px;
+    padding: 50px 0px;
     border-top:3px solid var(--yellowColor);
     color:#fff;
     font-family: var(--textFamily);
@@ -80,7 +80,7 @@
 /* anoteger section starts here */
 .card{
     width:100%;
-    margin:10px 0px 30px 0px;
+    margin:40px 0px;
     position: relative;
     overflow:hidden;
 }
@@ -108,8 +108,16 @@
     z-index:1;
     transition:0.5s;
     padding:10px;
-    font-family: var(--textFamily);
     color:#fff;
+}
+.layerclass h4{
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-family: var(--textFamily);
+}
+.layerclass p{
+    font-size:18px;
+    font-family: var(--textFamily);
 }
 
 /* home blog start here */
@@ -117,7 +125,7 @@
 .home-blog{
    width: 100%;
    display: flex;
-   margin:10px 0px 30px 0px   
+   margin:10px 0px 50px 0px   
 }
 .blue-background{
     background:var(--blueColor);
@@ -206,7 +214,8 @@
     color:#fff;
     font-size: 35px;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    font-weight: 600;
 }
 .inputformhome{
     width:100%;
@@ -226,19 +235,9 @@
 .home-testimony{
     padding: 40px 0px;
 }
-/* .slick-arrow.slick-prev,
-.slick-arrow.slick-next{
-    background: #8ecb2f;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index:1;
-    border-radius: 5px;
-    position: absolute;
-    top:80%;
-} */
+.textimony-container{
+    text-align: center;
+}
 .slick-prev::before,
 .slick-next::before{
     display: none;
@@ -295,7 +294,8 @@
     font-size: 40px;
     font-family: var(--textFamily);
     padding-bottom: 20px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
+    font-weight:600
 }
 .testimony-Slider{
     height: 190px;
@@ -308,17 +308,18 @@
 }
 .testimony-Slider .testimony-text{
     font-family: var(--textFamily);
-    font-size:19px;
+    font-size:20px;
     color:var(--blue2Color);
-    padding: 5px 20px ;
+    padding: 5px 30px ;
 }
 .testimony-Slider .testimony-name{
-    padding: 20px 0px
+    padding: 30px 0px
 }
 .testimony-Slider .testimony-name{
-    font-size: 17px;
+    font-size: 20px;
     color: var(--blueColor);
     font-family: var(--textFamily);
+    font-weight:600
 }
 
 /* css class for media screen */

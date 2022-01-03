@@ -135,10 +135,12 @@ export class Home extends Component {
                                 <div className="card-img">
                                     <img src={card1} alt="loading" />
                                 </div>
-                                <div className="layerclass">
-                                    <h4>My-New Dawn Quote</h4>
-                                    <p>short text will be here. develope a content</p>
-                                </div>
+                                <NavLink to="/gallery">
+                                    <div className="layerclass">
+                                        <h4>My-New Dawn Gallery</h4>
+                                        <p>short text will be here. develope a content</p>
+                                    </div>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -236,7 +238,7 @@ export class Home extends Component {
                         <Slider {...testimony} className="testimony-Slider">
                             {testimonydata.map(data =>{
                                     return(
-                                        <div key={data.id} className="">
+                                        <div key={data.id} className="textimony-container">
                                             <div>
                                                 <FaQuoteLeft className="testimony-quote"/><span className="testimony-text">{data.testimony}</span>
                                                 <FaQuoteRight className="testimony-quote"/>

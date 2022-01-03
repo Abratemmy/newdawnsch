@@ -1,26 +1,28 @@
+
 .footerpage{
-    background:var(--blueColor);
+    background: var(--blue2Color);
     padding:40px 0px;
-    color:#fff;
+    color:var(--blackColor);
     font-family: var(--textFamily);
     overflow:hidden;
 }
 .footerpage .footer-title{
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     padding:20px 0px;
     font-weight: bold;
-    color:var(--yellowColor)
+    color:var(--blueColor)
 }
 .footerpage .footer-text{
     font-size: 16px;
     padding: 10px 0px;
+    font-weight:550;
 }
 .footer-textcontactinfo{
     font-size: 15px!important;
 }
 .footer-text span{
-    color: var(--blue2Color);
+    color: var(--blueColor);
     font-weight: bold;
 }
 .footerpage ul{
@@ -32,19 +34,19 @@
     padding: 5px 0px;
 }
 .footer-nav{
-    color:#fff;
+    color:var(--blackColor);
     text-decoration: none;
-    transition: 0.3s all ease
+    transition: 0.4s all ease
 }
 .footer-nav:hover{
-    color: var(--blue2Color)
+    color: var(--blueColor)
 }
 
 .footer-policy{
-    background: var(--deepblack);
+    background: var(--blueColor);
     color:#fff;
-    padding: 30px 0px;
-    margin-top: 20px;
+    padding:35px 0px 30px 0px;
+    margin-top: 0px;
 }
 .footer-policy-text{
     display: flex;

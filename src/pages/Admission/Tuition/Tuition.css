@@ -1,0 +1,17 @@
+.Tuitionpage{
+    padding: 30px 0px 60px 0px;
+}
+.tuition-text{
+    text-align: justify;
+    font-size:17px;
+    font-weight: 600;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    line-height: 30px;
+    padding:5px 0px 20px 0px;
+}
+.tuition-text span{
+    font-weight: 500;
+    padding-right: 40px;
+
+}

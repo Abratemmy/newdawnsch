@@ -34,7 +34,7 @@
 }
 .nav-links {
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     height: 100%;
     border-bottom: 3px solid transparent;
     font-family: var(--textFamily);
@@ -42,8 +42,7 @@
     font-size: 18px;
     font-weight: bold;
     color: var(--blueColor);
-    transition: 0.4s all ease
-   
+    transition: 0.4s all ease   
 }
 .nav-links:hover{
     color:var(--blue2Color);

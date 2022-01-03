@@ -1,0 +1,74 @@
+import React from 'react';
+import Otherpage from '../../components/otherpage/Otherpage';
+import "./admission.css";
+
+function Admission() {
+    return (
+        <div>
+            <Otherpage title="Admission" subtitle="admission" />
+
+            <div className="admission-page">
+                <div className="container">
+                    <div className="admission-text">
+                        Choosing the right school marks a new beginning in the life of your child. Taking one’s time to explore 
+                        educational options is an important decision for any family or parent. My-New Dawn School has been a 
+                        co-educational school for more than 10 years; we understand how boys and girls learn and grow. 
+                        We seek to aid the development of children 
+                        in our care as scholars, athletes, artists and citizens by instilling in them the spirit of excellence.
+                    </div>
+
+                    <div className="admission-text">
+                        Well-rounded education is of paramount importance at My-New Dawn School. We guide all students to develop personal integrity and leadership skills on which they can draw for the rest of their lives. We would love to help you understand the unique benefits that we have
+                     to offer at My-New Dawn School, where we encourage each child to develop as a lifelong and confident learner.
+                    </div>
+
+                    <div className="admission-text">
+                        Our staff enjoy full opportunities of a professionally trained personalities. Freedom to express their opinions in order for the school and other stake holders to benefit. They experience
+                     retraining through seasonal experts which has made to be equal to non in the area of discharging their duties.
+                    </div>
+
+                    <div className="admission-text">
+                    Students prefer us to other just because we have been bonded by our mission statement, which was drive by our vission.
+                    </div>
+
+                    <div className="admission-text">
+                        Students seeking admission into our Secondary School are assessed formally. More structured assessments are conducted
+                         for those students seeking entry into JSS 2 and SS2 classes in their major subjects especially in  Mathematics and English. Students must fulfill the entry requirements for each class before 
+                        they are offered admission.
+                    </div>
+
+                    <div className="admission-text">
+                        Most successful applicants join at the start of the School
+                        year in September; occasionally students are admitted during the course of the school year based on availability.
+                    </div>
+
+                    <div className="admission-contact">
+                        <div className="admission-title">
+                            Contact us on the telephone numbers or email addresses listed below to schedule an appointment.
+                        </div>
+
+                        <div className="row">
+                            <div className="col-lg-6 col-md-6 col-sm-12 admission-col">
+                                <div className="admission-column">
+                                    <div className="admission-column-title">Tel No:</div>
+
+                                    <span> 08029748772</span>
+                                    <span>08055372675</span>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-12 admission-col">
+                                <div className="admission-column">
+                                    <div className="admission-column-title">Email Addresses:</div>
+                                    <span>mynewdawncollege@mynewdawn.org.ng</span>
+                                    <span>Mynewdawncollege@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Admission

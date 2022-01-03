@@ -1,0 +1,26 @@
+.visionmission{
+    padding: 60px 0px 40px 0px;
+}
+.visionmission-card{
+    border: 2px solid #e4e2e2;
+    height: 420px;
+    font-family: var(--textFamily);
+    margin-bottom: 40px;
+}
+.visionmission-title{
+    background: var(--blueColor);
+    color:#fff;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: var(--textFamily);
+    font-size: 17px;
+    font-weight:700
+}
+.visionmission-text{
+    line-height: 30px;
+    color: var(--blackColor);
+    font-size:16px;
+    text-align: justify;
+    padding:10px;
+    font-weight:600
+}

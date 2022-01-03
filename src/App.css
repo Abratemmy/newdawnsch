@@ -4,16 +4,25 @@
 }
 
 :root{
-  --textFamily:'Open Sans', sans-serif;
-  --deepblack: #24272b;
-  --blueColor:rgb(26, 26, 151);
-  --blue2Color:rgb(160, 208, 223);
+  --textFamily:'Lato', sans-serif;
+  --blackColor: #2d2d2d;
+  --blueColor:rgb(11, 11, 180);
+  --blue2Color: #bce2ff;
   --yellowColor: #bcd631;
+  --background: 
 }
 .line{
   width: 100px;
-  border-top: 3px solid #d4f51b;
+  border-top: 3px solid var(--blueColor);
   margin-bottom: 50px;
   z-index: 20;
   opacity:1;
+}
+.page-title{
+  text-transform: uppercase;
+  color: var(--blackColor);
+  font-weight:900;
+  font-family: var(--textFamily);
+  font-size:30px;
+  padding-top:30px;
 }

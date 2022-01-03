@@ -1,0 +1,53 @@
+.teacherpage{
+    padding:60px 0px 40px 0px;
+}
+.teacher-card{
+    background:#fff;
+    box-shadow: 5px 0px 5px 5px #e4e2e2;
+    height:350px;
+    margin-bottom: 40px;
+    width:90%;
+    overflow:hidden;
+    border-radius: 15px;
+    text-align: center;
+    font-family: var(--textFamily);
+}
+.teacher-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.teacher-name{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight:700;
+    color:var(--blackColor);
+    padding: 15px 0px 4px 0px;
+}
+.teacher-position{
+    font-size: 15px;
+    color: var(--blueColor);
+    font-weight: 600;
+    font-style: italic;
+}
+.teacher-social-icon{
+
+    margin-top: 20px;
+}
+.teacher-social-icon span{
+    padding: 10px ;
+}
+.teacher-icon{
+    color: var(--blackColor);
+    background: #e4e2e2;
+    font-size: 14px;
+    width: 40px;
+    height:40px;
+    border-radius:50%;
+    padding:10px;
+    transition: 0.4s all ease;
+}
+.teacher-icon:hover{
+    background:var(--blueColor);
+    color:#fff;
+}

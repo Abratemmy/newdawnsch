@@ -1,0 +1,46 @@
+.admission-page{
+    padding: 60px 0px 50px 0px;
+
+}
+.admission-text{
+    text-align: justify;
+    font-size:17px;
+    font-weight: 600;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    line-height: 30px;
+    padding: 20px 0px;
+}
+.admission-contact{
+    border: 2px solid #e4e2e2;
+    box-shadow: 5px 0px 5px 5px #e4e2e2;
+    margin-top: 40px;
+}
+.admission-title{
+    background: var(--blueColor);
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--textFamily);
+}
+.admission-col:not(:last-child){
+    border-right: 2px solid var(--blueColor);
+}
+.admission-column{
+    padding: 30px 15px;
+    font-family: var(--textFamily);
+}
+.admission-column-title{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.admission-column span{
+    display:block;
+    padding: 5px;
+    font-size:16px;
+    font-weight: 600
+}

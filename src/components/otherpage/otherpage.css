@@ -1,0 +1,48 @@
+.otherpage-background{
+    background:linear-gradient(180deg, rgba(2, 2, 2, 0.938), rgba(0, 0, 0, 0.443)),url("../../images/otherpagebg.jpg");
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.otherpage-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    color:#fff;
+    font-family: var(--textFamily);
+}
+.otherpage-title{
+    font-size: 34px;
+    font-weight: 700
+}
+.otherpage-subtitle{
+    background: linear-gradient(180deg, rgba(61, 179, 247, 0.443), rgba(114, 179, 233, 0.443));
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.otherpage-icon{
+    color: var(--blackColor);
+    background:#fff;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
+}
+.otherpage-subtitle span{
+    padding:0px 5px
+} 
+.otherpage-link{
+    text-decoration: none;
+    color:#fff;
+    padding-left: 5px;
+    transition: 0.4s all ease;
+}
+.otherpage-link:hover{
+    color:var(--blue2Color);
+}

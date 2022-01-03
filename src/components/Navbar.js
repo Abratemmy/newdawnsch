@@ -90,7 +90,7 @@ function Navbar() {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/approach" exact activeClassName="active" className="nav-links"onClick={handleClick}>Approach</NavLink>
+                                <NavLink to="/gallery" exact activeClassName="active" className="nav-links"onClick={handleClick}>Gallery</NavLink>
                             </li>
                             <li className="nav-item">
                                 <div className="drop-plus">
