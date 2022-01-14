@@ -46,11 +46,12 @@
 
 .navbar {
     height: 110px;
-    display: flex;
+    display: flex!important;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     transition:0.5s all ease;
+    width:100%;
 }
 .navbar.active{
     background: #fff;
@@ -64,7 +65,7 @@
 }
 .nav-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100px;
@@ -94,11 +95,139 @@
 .nav-item {
     line-height: 75px;
 }
-.nav-item.active {
-    color: var(--blue2Color);
-    border-top:3px solid var(--yellowColor);
+.nav-item .active {
+    color: var(--blue2Color)!important;
+    border-top:3px solid var(--blue2Color);
     padding-top:25px;
 }
+
 .nav-icon{
     display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--blackColor)
+}
+.dropdown-content{
+    position: absolute;
+    margin-top: 0px;
+    background: var(--blue2Color)
+}
+.dropdown-content ul{
+    list-style: none;
+    padding: 0px;
+    margin:0
+}
+.dropdown-content li{
+    line-height: 40px;
+    text-align: left;
+}
+.dropdown-nav{
+    color: var(--blackColor);
+    font-size: 17px;
+    font-family: var(--textFamily);
+    text-decoration: none;
+    font-weight: 550;
+    padding: 0px 15px;
+    display: none
+}
+.nav-item:hover .dropdown-nav{
+    display: block
+}
+.nav-item2 .active {
+    color: #fff!important;
+    border-top:none;
+    padding-top:0px;
+}
+@media screen and (max-width: 1000px){
+    .nav-icon{
+        display: block;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 100px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        text-align: left;
+    }
+    
+    .nav-menu.active {
+        background: var(--blue2Color);
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      
+    }
+    .nav-links {
+        padding: 0.5rem;
+        width: 100%;
+        display: table;
+    }
+    .nav-item {
+        line-height: 15px;
+    }
+    .nav-links:hover{
+        background: rgb(190, 228, 240);
+        color:#fff;
+    }
+    .nav-item .active {
+        color: var(--blueColor)!important;
+        border-top:3px solid var(--blue2Color);
+        padding-top:0px;
+    }
+   .nav-item:hover .dropdown-nav{
+        display: block
+    }
+    .nav-item .dropdown-content{
+        height:auto;
+    }
+    
+
+    /* css for the top navbar */
+    .top-navbar::before{
+        content: "Welcome to My-New Dawn School";
+        position: absolute;
+        background: var(--blue2Color);
+        width: 50%;
+        height: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding-left: 50px;
+        display: block;
+        color: #fff;
+        padding-top: 10px;
+        font-weight:500
+    }
+    .navtop-email{
+        display: none
+    }
+}
+
+@media screen and (max-width: 760px){
+    .top-navbar{
+        height: 60px;
+        
+    }
+    .top-navbar::before{
+        content: "Welcome to My-New Dawn School";
+        position: absolute;
+        background: var(--blue2Color);
+        width: 70%;
+        height: 60px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding-left: 20px;
+        display: block;
+        color: #fff;
+        padding-top: 10px;
+        font-weight:500
+    }
+    .newnav-top {
+        display: none;
+    }
 }

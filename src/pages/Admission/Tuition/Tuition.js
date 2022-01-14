@@ -1,7 +1,7 @@
 import React from 'react';
 import Otherpage from '../../../components/otherpage/Otherpage';
 import "./Tuition.css";
-import {NavLink} from "react-router-dom"
+// import {NavLink} from "react-router-dom"
 
 function Tuition() {
     return (
@@ -42,9 +42,9 @@ function Tuition() {
                         <span>Address: </span> 10, Adepegba street, Behind Wema Bank, Abule-egba Lagos.
                     </div>
 
-                    <button className="main-btn">
+                    {/* <button className="main-btn">
                         <NavLink to="/pay_fees" className="btn-nav">Proceed to Payment</NavLink>
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

@@ -11,62 +11,62 @@ import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 
 
-const teachercard=[
-    {
-      id:"1",
-      image: teacher1,
-      name:" Newdawn Akande",
-      position:"Head Master",
-      facebook: "https://facebook.com",
-      instagram:"https://instagram.com",
-      linkedin:"https://linkedin.com"  
-    },
-    {
-        id:"2",
-        image: teacher2,
-        name:" Atorise A O",
-        position:"Physics Teacher",
-        facebook: "https://facebook.com",
-        instagram:"https://instagram.com",
-        linkedin:"https://linkedin.com"  
-    },
-    {
-        id:"3",
-        image: teacher3,
-        name:" Alafia Majekodunmi",
-        position:"Chemistry Teacher",
-        facebook: "https://facebook.com",
-        instagram:"https://instagram.com",
-        linkedin:"https://linkedin.com"  
-    },
-    {
-        id:"4",
-        image: teacher4,
-        name:" Olaosebikan Joy",
-        position:"Maths Teacher",
-        facebook: "https://facebook.com",
-        instagram:"https://instagram.com",
-        linkedin:"https://linkedin.com"  
-    },
-    {
-        id:"5",
-        image: teacher5,
-        name:" Abosede Vivian",
-        position:"English Teacher",
-        facebook: "https://facebook.com",
-        instagram:"https://instagram.com",
-        linkedin:"https://linkedin.com"  
-    },
-    {
-        id:"6",
-        image: teacher6,
-        name:" Akanmu Adisa",
-        position:"Supervisor",
-        facebook: "https://facebook.com",
-        instagram:"https://instagram.com",
-        linkedin:"https://linkedin.com"  
-    },
-]
+// const teachercard=[
+//     {
+//       id:"1",
+//       image: teacher1,
+//       name:" Newdawn Akande",
+//       position:"Head Master",
+//       facebook: "https://facebook.com",
+//       instagram:"https://instagram.com",
+//       linkedin:"https://linkedin.com"  
+//     },
+//     {
+//         id:"2",
+//         image: teacher2,
+//         name:" Atorise A O",
+//         position:"Physics Teacher",
+//         facebook: "https://facebook.com",
+//         instagram:"https://instagram.com",
+//         linkedin:"https://linkedin.com"  
+//     },
+//     {
+//         id:"3",
+//         image: teacher3,
+//         name:" Alafia Majekodunmi",
+//         position:"Chemistry Teacher",
+//         facebook: "https://facebook.com",
+//         instagram:"https://instagram.com",
+//         linkedin:"https://linkedin.com"  
+//     },
+//     {
+//         id:"4",
+//         image: teacher4,
+//         name:" Olaosebikan Joy",
+//         position:"Maths Teacher",
+//         facebook: "https://facebook.com",
+//         instagram:"https://instagram.com",
+//         linkedin:"https://linkedin.com"  
+//     },
+//     {
+//         id:"5",
+//         image: teacher5,
+//         name:" Abosede Vivian",
+//         position:"English Teacher",
+//         facebook: "https://facebook.com",
+//         instagram:"https://instagram.com",
+//         linkedin:"https://linkedin.com"  
+//     },
+//     {
+//         id:"6",
+//         image: teacher6,
+//         name:" Akanmu Adisa",
+//         position:"Supervisor",
+//         facebook: "https://facebook.com",
+//         instagram:"https://instagram.com",
+//         linkedin:"https://linkedin.com"  
+//     },
+// ]
 function Teacher() {
     
     return (

@@ -21,7 +21,7 @@ const SinglePost =(props) =>{
     const[postId, setPostId] = useState('');
     useEffect(()=>{
         const postId = props.match.params.postId;
-        const post = blogpost.find(post=>post.id == postId);
+        const post = blogpost.find(post=>post.id === postId);
         setPost(post);
         setPostId(postId)
     },[post,props.match.params.postId]);

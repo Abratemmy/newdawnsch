@@ -144,9 +144,45 @@
     width: 100%;
     height: 300px;
 }
-@media screen and(max-width: 860px){
-    .singlepost-date{
-        width: 40% !important;
 
-    }
+
+/* css for sidebar starts here */
+.sidebar-header{
+    font-size: 18px;
+    font-family: var(--textFamily);
+    padding: 10px 0px 20px 0px;
+    font-weight: 600
+}
+.sidebar-container{
+    border: 2px solid #e4e2e2;
+}
+.sidebar-page{
+    border: 1px solid var(--blue2Color);
+    padding: 5px;
+    font-family: var(--textFamily);
+    background: #fff;
+    transition:0.4s all ease
+}
+.sidebar-page h5{
+    color: var(--blueColor);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.sidebar-page p{
+    font-size: 14px;
+    color: #c7c4c4
+}
+.sidebar-nav{
+    text-decoration: none;
+}
+.sidebar-nav:hover{
+    color: #fff;
+}
+.sidebar-page:hover{
+    background:var(--blue2Color);
+    color: #fff;
+}
+.sidebar-page:hover h5{
+    color: #fff
 }

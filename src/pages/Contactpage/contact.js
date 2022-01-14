@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Otherpage from '../../components/otherpage/Otherpage';
 import './contact.css';
-import { FaHome, FaEnvelope, FaPhone, FaFacebook, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaHome, FaEnvelope, FaPhone,  FaInstagram, FaFacebookF } from 'react-icons/fa';
 import Form from './Form';
 
 export class Contact extends Component {

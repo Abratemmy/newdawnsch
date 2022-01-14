@@ -8,11 +8,10 @@
     top:0px;
     left:0px;
     opacity: 1;
-    visibility: inherit;
 }
 .homecontainer-text{
     justify-content: center;
-    padding-top: 130px;
+    padding-top: 100px;
     color:#fff;
     width: 500px;
     font-family: var(--textFamily);
@@ -22,6 +21,7 @@
     padding-bottom: 15px;
     font-size: 18px;
     font-weight: 550;
+    color: #fff
 }
 .home-container h1{
     font-weight: 700;
@@ -48,20 +48,19 @@
 }
 .btn-nav:hover{
     border-style:dashed;
-    animation: spin 2s infinite linear;
     color:#fff;
 }
 
-@keyframes spin { 
+/* @keyframes spin { 
     100% { 
         transform: rotateZ(360deg);
     }
-}
+} */
 
 .title-header{
     text-align: center;
     font-family:var(--textFamily);
-    padding-top: 50px;
+    padding: 50px 0px 20px 0px;
 }
 .title-header p{
     font-size:20px;
@@ -70,4 +69,234 @@
 .title-header h1{
     color: var(--blackColor);
     font-weight: 600;
+}
+.title-header h1 span{
+    color: var(--blue2Color)
+}
+.home-journey{
+    padding: 20px 0px 40px 0px;
+}
+.home-journey .home-text{
+    color: var(--blackColor);
+    line-height: 30px;
+    padding: 5px 0px 20px 0px;
+    font-family: var(--textFamily);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 550
+}
+.home-provide{
+    background:linear-gradient(180deg, rgba(189, 217, 233, 0.966), rgba(179, 219, 238, 0.925)), url("../../images/homeprovide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 40px;
+    
+}
+
+.home-provide-content{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: var(--textFamily);
+}
+.home-provide-icon{
+    color:#fff;
+    font-size: 30px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.home-icon1{
+    background: linear-gradient(180deg, rgba(133, 245, 208, 0.966), rgba(236, 99, 133, 0.925));
+}
+.home-icon2{
+    background: linear-gradient(180deg, rgba(133, 172, 245, 0.966), rgba(25, 201, 172, 0.63));
+}
+.home-icon3{
+    background: linear-gradient(180deg, rgba(74, 80, 161, 0.966), rgba(49, 164, 231, 0.63));
+}
+.home-icon4{
+    background: linear-gradient(180deg, rgba(133, 238, 245, 0.966), rgba(9, 163, 117, 0.63));
+}
+.home-icon5{
+    background: linear-gradient(180deg, rgba(44, 130, 201, 0.966), rgba(92, 101, 216, 0.63));
+}
+.home-icon6{
+    background: linear-gradient(180deg, rgba(64, 239, 252, 0.966), rgba(28, 110, 204, 0.63));
+}
+.home-provide-title{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0px 10px;
+}
+.home-provide-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* home testimonial starts here */
+.testimonial{
+    background:linear-gradient(180deg, rgba(17, 17, 17, 0.966), rgba(13, 15, 15, 0.973)), url("../../images/homeprovide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 40px;
+}
+.home-testimonial-container{
+    text-align: center;
+}
+.home-testimony-quote{
+    color: var(--blue2Color);
+    font-size: 40px;
+}
+.testimony-Slider{
+    padding: 20px 0px;
+    height: 180px;
+}
+.testimony-Slider .testimony-text{
+    font-family: var(--textFamily);
+    font-size:20px;
+    color:var(--blue2Color);
+    padding: 5px 20px !important;
+}
+
+.testimony-Slider .testimony-name{
+    padding: 30px 0px;
+    font-size: 20px;
+    color: var(--blueColor);
+    font-family: var(--textFamily);
+    font-weight:600
+}
+/* css to change the dots style */
+.slick-dots{
+    position: absolute;
+    bottom: 10px!important;
+    list-style: none;
+    text-align:center;
+    display:block;
+    width:100%!important;
+}
+.slick-dots li{
+    position:relative;
+    display:inline-block;
+    width:20px!important;
+    height: 20px;margin:0 5px;
+    padding:0;cursor:pointer;
+}
+.slick-dots li button{
+    font-size:0;
+    line-height:0;
+    display: block;
+    width:20px!important;
+    height:20px!important;
+    padding:5px!important;
+    cursor:pointer!important;
+    border-radius: 50%!important;
+    border:0!important;
+    outline:none!important;
+    background:var(--blue2Color)!important;
+}
+.slick-dots li button::before{
+    font-size: 20px!important;
+    color: var(--blueColor)!important;
+    opacity:1
+}
+/* home blog starts here */
+.home-blog-slide{
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    padding: 40px 0px;
+}
+.blog-container{
+    width:100%;
+}
+.blog-container:hover .homeblog-img{
+    transform:scale(1.02)
+}
+.homeblog-img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    transition:0.4s all ease;
+}
+.home-blog-title{
+    position: relative;
+    color:#fff;
+    font-family: var(--textFamily);
+    background: var(--blue2Color);
+    padding: 10px 3px;
+    font-size:20px;
+    width:100%!important;
+    text-transform: capitalize;
+}
+.home-blogdate{
+    padding: 20px 0px 15px 0px;
+    font-style: italic;
+    color:var(--deepblack);
+    font-size: 14px;
+    font-family: var(--textFamily)
+}
+.homeblog-text{
+    font-family: var(--textFamily);
+    font-size: 16px;
+    line-height: 30px;
+}
+.homeblog-readmore{
+    padding:20px 0px;   
+}
+.homeblognav{
+    font-family: var(--textFamily);
+    color:var(--blackColor);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s all ease;
+    font-weight: 550
+}
+.homeblognav:hover{
+    color:var(--blue2Color)
+}
+
+
+@media screen and (max-width: 760px){
+    .home-container{
+        width: 100%;
+        height:350px;
+        background-size: cover;
+        background-position: center center;
+        object-fit: cover;
+    }
+    .homecontainer-text{
+        justify-content: center;
+        padding-top: 70px;
+        width: 100%;
+    }
+    .home-container h1{
+        font-weight: 600;
+        font-size:35px;
+        padding-bottom: 5px;
+    }
+    .home-container p{
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    .main-btn{
+        margin-top:10px;
+    }
+    
+    .home-testimony-quote{
+        color: var(--blue2Color);
+        font-size: 30px;
+    }
+    .testimony-Slider .testimony-text{
+        font-size:17px;
+    }
+    
+    .testimony-Slider .testimony-name{
+        padding: 15px 0px 20px 0px;
+        font-size: 18px;
+    }
 }
