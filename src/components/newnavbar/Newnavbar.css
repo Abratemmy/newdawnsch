@@ -160,6 +160,50 @@
     border-top:none;
     padding-top:0px;
 }
+
+.popup-main{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue2Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30
+}
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 50%;
+    background: #fff;
+    color:var(--blackColor)
+}
+.popup-inner .close-btn{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: red;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+.popup-account{
+    font-size: 18px;
+    font-family: var(--textFamily);
+}
+.popup-account span{
+    font-weight: 600;
+}
 @media screen and (max-width: 1000px){
     .nav-icon{
         display: block;
@@ -233,50 +277,13 @@
         margin-right: 0px;
         right:-10px;
     }
+    .popup-inner{
+        position: relative;
+        padding: 20px;
+        width: 70%;
+    }
 }
-.popup-main{
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-.popup{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: var(--blue2Color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 30
-}
-.popup-inner{
-    position: relative;
-    padding: 32px;
-    width: 50%;
-    background: #fff;
-    color:var(--blackColor)
-}
-.popup-inner .close-btn{
-    position: absolute;
-    top: 0px;
-    right: 5px;
-    color: red;
-    border: none;
-    background: transparent;
-    font-size: 25px;
-}
-.popup-account{
-    font-size: 18px;
-    font-family: var(--textFamily);
-}
-.popup-account span{
-    font-weight: 600;
-}
+
 @media screen and (max-width: 760px){
     .top-navbar{
         height: 60px;
@@ -304,5 +311,10 @@
         width: 100%;
         position: relative;
         right:-10px;
+    }
+    .popup-inner{
+        position: relative;
+        padding: 20px;
+        width: 90%;
     }
 }
