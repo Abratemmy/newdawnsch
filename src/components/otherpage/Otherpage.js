@@ -10,9 +10,13 @@ export class Otherpage extends Component {
                 <div className="container">
                     <div className="otherpage-container">
                         <div className="otherpage-title">{this.props.title}</div>
-                        <div className="otherpage-subtitle"><FaHome className="otherpage-icon" /> <NavLink to="/newdawnsch" className="otherpage-link">Homepage </NavLink><span>-</span> {this.props.subtitle}</div>
+                        <div className="otherpage-subtitle big-screen"><FaHome className="otherpage-icon" /> <NavLink to="/newdawnsch" className="otherpage-link">Homepage </NavLink><span>-</span> {this.props.subtitle}</div>
                     </div>
+
+                    <div className="otherpage-subtitle small-screen"><FaHome className="otherpage-icon" /> <NavLink to="/newdawnsch" className="otherpage-link">Homepage </NavLink></div>
                 </div>
+
+                
                 
             </div>
         )

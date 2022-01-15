@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Otherpage from '../../components/otherpage/Otherpage';
 import "./admission.css";
 
@@ -64,6 +65,10 @@ function Admission() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="admission-text">
+                        For more enquiries, <NavLink to="/contact" className="nav-btn-nav"> Contact us </NavLink >
                     </div>
                 </div>
             </div>

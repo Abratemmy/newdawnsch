@@ -108,3 +108,75 @@
     position: relative;
     margin-top: -3px!important;
 }
+@media screen and (max-width: 760px){
+    .contact-address{
+        padding: 30px 0px 0px 5px!important;
+    }
+    .contact-title{
+        font-size:30px;
+    }
+    .contact-text{
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+    .contact-icon{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #fff;
+        color:var(--blueColor);
+        font-size: 13px;
+        padding:12px
+    }
+    .contact-row{
+        padding-bottom: 15px;
+    }
+    .contact-details{
+        font-size: 15px;
+    }
+    .contact-details span{
+        padding-bottom: 5px;
+    }
+    .contact-social-icon{
+        font-size: 20px;
+    }
+    .contact-social-icon span{
+        font-size: 10px;
+        padding: 0px 10px;
+        position: relative;
+        top:-10px;
+    }
+    .contact-social-icon .social-icon{
+        height: 40px;
+        width:40px;
+        border-radius: 50%;
+        background: var(--blue2Color);
+        padding: 10px;
+    }
+    .formpage{
+        padding-top: 30px;
+    }
+    .form-title{
+        font-size: 30px;
+    }
+    .form-input .inputfield {
+        height: 45px;
+        width: 100%;
+    }
+    .form-input .textareafield{
+        width: 100%;
+    }
+    .form-btn{
+        position: relative;
+        margin-top: -3px!important;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .form-btn{
+        position: relative;
+        margin-top: -3px!important;
+        margin-bottom: 30px;
+    }
+}

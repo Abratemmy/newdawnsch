@@ -4,6 +4,7 @@
     width: 100%;
     color:#fff;
     position: relative;
+    display: flex;
 }
 .top-navbar::before{
     content: "Welcome to My-New Dawn School";
@@ -40,6 +41,27 @@
 }
 .newnav-top .react-icon{
     color: var(--blueColor);  
+}
+.nav-main-btn{
+    border: none;
+    background: transparent;
+    margin-right: 30px;
+}
+.nav-btn-nav{
+    text-decoration: none;
+    padding: 5px 10px;
+    background: var(--blueColor);
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: 600;
+    transition: 0.4s all ease;
+
+}
+.nav-btn-nav:hover{
+    color:#fff;
+    background: var(--blue2Color)
 }
 
 /*main navbar css starts here */
@@ -193,11 +215,11 @@
         content: "Welcome to My-New Dawn School";
         position: absolute;
         background: var(--blue2Color);
-        width: 50%;
+        width: 42%;
         height: 50px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        padding-left: 50px;
+        padding-left: 40px;
         display: block;
         color: #fff;
         padding-top: 10px;
@@ -206,8 +228,55 @@
     .navtop-email{
         display: none
     }
+    .nav-main-btn{
+        width: 30%;
+        margin-right: 0px;
+        right:-10px;
+    }
 }
-
+.popup-main{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue2Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30
+}
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 50%;
+    background: #fff;
+    color:var(--blackColor)
+}
+.popup-inner .close-btn{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: red;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+.popup-account{
+    font-size: 18px;
+    font-family: var(--textFamily);
+}
+.popup-account span{
+    font-weight: 600;
+}
 @media screen and (max-width: 760px){
     .top-navbar{
         height: 60px;
@@ -217,7 +286,7 @@
         content: "Welcome to My-New Dawn School";
         position: absolute;
         background: var(--blue2Color);
-        width: 70%;
+        width: 60%;
         height: 60px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
@@ -229,5 +298,11 @@
     }
     .newnav-top {
         display: none;
+    }
+    .nav-main-btn{
+        margin-right: 0px;
+        width: 100%;
+        position: relative;
+        right:-10px;
     }
 }

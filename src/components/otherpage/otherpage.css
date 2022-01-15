@@ -46,3 +46,29 @@
 .otherpage-link:hover{
     color:var(--blue2Color);
 }
+.small-screen{
+    display: none;
+}
+
+@media screen and (max-width: 760px){
+    .big-screen{
+        display: none;
+    }
+    .otherpage-container{
+        padding-top: 30px;
+    }
+    .otherpage-title{
+        font-size: 25px;
+        font-weight: 700
+    }
+    .otherpage-subtitle{
+        margin-top: 30px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .small-screen{
+        display: none;
+    }
+}

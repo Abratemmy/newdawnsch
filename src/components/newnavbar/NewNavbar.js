@@ -5,6 +5,7 @@ import {MdEmail} from "react-icons/md";
 import logo from '../../images/newdawnlogo.jpeg';
 import { Link, NavLink } from 'react-router-dom';
 import {FiAlignRight,FiXCircle} from "react-icons/fi";
+import Popup from './popup.js';
 
 function NewNavbar() {
     const [navbar, setNavbar] = useState(false);
@@ -25,7 +26,7 @@ function NewNavbar() {
     }
     window.addEventListener('scroll', changeBackground)
 
-
+    const [buttonPopup, setButtonPopup] = useState(false)
     return (
         <div className="newnavbar-container">
             <div className="top-navbar">
@@ -34,10 +35,21 @@ function NewNavbar() {
                         <div className="text"></div>
                         <div className="number">
                             <FaPhoneAlt className="react-icon" /><span>08029748772, 08055372675 </span>
-                            <span className="navtop-email"><MdEmail className="react-icon" /><span>mynewdawncollege@mynewdawn.org.ng</span></span>
+                            <span className="navtop-email"><MdEmail className="react-icon" /><span>mynewdawncollege@gmail.com</span></span>
                         </div>
                     </div>
+                    
                 </div>
+                <button className="nav-main-btn" onClick={() => setButtonPopup(true)}>
+                    <div className="nav-btn-nav">Pay Fees</div>
+                </button>
+
+                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                    <h3>My-New Dawn Account Details</h3>
+                    <div className="popup-account" style={{paddingTop:"20px"}}>Account Name : <span> My new dawn school</span></div>
+                    <div className="popup-account">Account Number : <span>0142303518</span></div>
+                    <div className="popup-account">Bank Name : <span>Guarantee Trust Bank(GTb)</span></div>
+                </Popup>
             </div>
 
             <div className={navbar ? "navbar active":"navbar"}>
