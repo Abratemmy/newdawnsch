@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/newdawnsch/static/css/main.85baca07.chunk.css",
+    "main.css": "/newdawnsch/static/css/main.d953c7c1.chunk.css",
     "main.js": "/newdawnsch/static/js/main.bf7a1fbe.chunk.js",
     "main.js.map": "/newdawnsch/static/js/main.bf7a1fbe.chunk.js.map",
     "runtime-main.js": "/newdawnsch/static/js/runtime-main.0e90ba6b.js",
@@ -10,7 +10,7 @@
     "static/js/2.1a447d4a.chunk.js.map": "/newdawnsch/static/js/2.1a447d4a.chunk.js.map",
     "index.html": "/newdawnsch/index.html",
     "static/css/2.6121fee1.chunk.css.map": "/newdawnsch/static/css/2.6121fee1.chunk.css.map",
-    "static/css/main.85baca07.chunk.css.map": "/newdawnsch/static/css/main.85baca07.chunk.css.map",
+    "static/css/main.d953c7c1.chunk.css.map": "/newdawnsch/static/css/main.d953c7c1.chunk.css.map",
     "static/js/2.1a447d4a.chunk.js.LICENSE.txt": "/newdawnsch/static/js/2.1a447d4a.chunk.js.LICENSE.txt",
     "static/media/faqs.css": "/newdawnsch/static/media/arrows.c70a7259.PNG",
     "static/media/background1.b37ee41e.JPG": "/newdawnsch/static/media/background1.b37ee41e.JPG",
@@ -37,7 +37,7 @@
     "static/js/runtime-main.0e90ba6b.js",
     "static/css/2.6121fee1.chunk.css",
     "static/js/2.1a447d4a.chunk.js",
-    "static/css/main.85baca07.chunk.css",
+    "static/css/main.d953c7c1.chunk.css",
     "static/js/main.bf7a1fbe.chunk.js"
   ]
 }
