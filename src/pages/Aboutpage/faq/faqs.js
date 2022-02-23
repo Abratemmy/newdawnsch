@@ -6,37 +6,36 @@ function Faqs(index) {
     const [faqs,setfaqs] = useState([
 
         {
-            question:'Why is Evernall a different kind of law Firm?',
-            answer:'Evernall is not only risk-focused but commercially minded and very dynamic in its approach. We work with our Clients from business infancy to growth mode and leverage very heavily on technology and easy-to – use templates (with guidance notes), to give you more ease, in terms of cost and timelines.',
+            question:'What distinguishes this school from other schools?',
+            answer:'Our consistent culture of thorough teaching by making sure the students gain the essence of enrolling in our school has given us edge over others.',
+            answer1:' Keeping to our words by delivering our promise make our school better than others',
             open:false
         },
         {
-            question:'Do I have to run a thriving business before engaging with Evernall? ',
-            answer:'No. From the point of ideation, you need the partnership of Evernall – like a mid-wife, to help you birth your brilliant ideas, totally risk-free and on a sure-footed platform. ',
-            answer1:'We are commercially savvy and are not so strict as not to give you practical tips here and there, to help you stand upright, in your business.',
+            question:"What is the school's educational philosophy?",
+            answer:'Our philosophy is our vision for  both the students, parents, community and all stakeholders. To produce responsible students that can stand tall among colleagues, be a beneficial to himself, parents and the community at large. By extension taking the school name to a greater height',
             open:false
         },
 
         {
-            question:"Must I engage the whole range of Evernall’s Services? What if I just need a Contract drafted or a simple document review? ",
-            answer:"All Services are tailor- made and can be called out independently or in suites. For instance, we can handle only an aspect of contracting that you require – contract review, negotiations, contract drafting, training, contract management etc or we can handle the whole pack of it. ",
-            answer1:"Our retainership rates are quite affordable and inclusive – we base our offerings on where you are in business, such that there are packages for Freelancers, Small business owners etc",
-            answer2:"Sometimes, we may suggest a legal audit (which is a simple process) first, so that we can do a gap-analysis and advise on what Services you require to scale up.",
+            question:" Is the school implementing the Common Core Standards? ",
+            answer:"We are known for the best. Hence, implementing a common core standard is our watchword. We make sure the societal consensus believes in ethics, moral, integrity and academic standards are pursuit",
+            open:false
+        },
+
+        {
+            question:" Can you tell me specifics about your curriculum? ",
+            answer:"Our curriculum is Nigerian and British based ",
             open:false
         },
         {
-            question:"How are Clients billed, at Evernall – What if I cannot afford the Services? ",
-            answer:"Evernall’s prices are arguably the lowest in this terrain, considering the expertise and quality of work put into the job. Billing is done per job and not on an hourly or day-rate basis. ",
-            answer1:"Payments for retainership or packages can be made in instalments too.",
+            question:" What is the student/ teacher ratio?",
+            answer:"The students teacher ratio is based on UNESCO prescribed ratio.",
             open:false
         },
         {
-            question:"How does Evernall, partner with budding entrepreneurs and business owners to manage their risk? ",
-            answer:"Evernall will draw up a legal risk map for your business and how to avert all risk ",
-            answer1:'Each risk will carry an affordable or free remedy – best if you know and plan ahead for them',
-            answer2:'Otherwise, you can have access to Evernall template suites to manage all aspects of your startup and growing business',
-            answer3:'We can also design negotiation templates for your transactions, if you cannot afford to pay the full range of the fees.',
-            answer4:'Basically, our goal is for you to succeed, so that we can win together. We have dynamic solutions therefore, tailored to make you succeed while still getting the best – in- class of Materials and Services.',
+            question:"Are the teachers certified?",
+            answer:"Our teachers are not only certified but professional in the subjects they handle ",
             open:false
         }    
 

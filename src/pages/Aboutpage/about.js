@@ -1,10 +1,10 @@
 import React from 'react';
 import Otherpage from '../../components/otherpage/Otherpage';
 import "./about.css";
-import visionmisssion from "../../images/pagesbg.webp";
-import schoolsong from "../../images/blog1.JPG";
-import teacher from "../../images/blog2.JPG";
-import faq from "../../images/blog3.JPG"
+import visionmisssion from "../../images/visionmission.jpg";
+import schoolsong from "../../images/schsong.JPG";
+import teacher from "../../images/teachers.jpg";
+import faq from "../../images/faq.jpg"
 import { NavLink } from 'react-router-dom';
 
 function About() {
