@@ -35,10 +35,30 @@ function Tuition() {
                     </div>
 
                     <div className="tuition-text">
+                        <span>Bank Name : </span> STERLING BANK <br />
+
+                        <span>Account Name : </span> MY NEWDAWN EDUCATIONAL CONSULT <br />
+                        <span>Account Number :</span>0083458557<br />
+                        <span>Address: </span> 10, Adepegba street, Behind Wema Bank, Abule-egba Lagos.
+                    </div>
+
+                    <hr />
+
+                    <div className="tuition-text">
                         <span>Bank Name : </span>  Guarantee Trust Bank  (GTB), <br />
 
-                        <span>Account Name : </span> My-New Dawn School, <br />
-                        <span>Account Number :</span> 0142506518 <br />
+                        <span>Account Name : </span>MY NEWDAWN EDUCATIONAL CONSULT. ACCT , <br />
+                        <span>Account Number :</span> 0019028331<br />
+                        <span>Address: </span> 10, Adepegba street, Behind Wema Bank, Abule-egba Lagos.
+                    </div>
+
+                    <hr />
+
+                    <div className="tuition-text">
+                        <span>Bank Name : </span>  Wema Bank <br />
+
+                        <span>Account Name : </span>MY NEWDAWN EDUCATIONAL CONSULT. ACCT , <br />
+                        <span>Account Number :</span> 0243324811<br />
                         <span>Address: </span> 10, Adepegba street, Behind Wema Bank, Abule-egba Lagos.
                     </div>
 
