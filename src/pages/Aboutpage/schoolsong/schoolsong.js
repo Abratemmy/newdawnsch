@@ -1,7 +1,6 @@
 import React from 'react';
 import Otherpage from '../../../components/otherpage/Otherpage';
 import "./schoolsong.css";
-import schsong from "../../../images/schsong.JPG";
 
 function Schoolsong() {
     return (
@@ -13,7 +12,7 @@ function Schoolsong() {
                     <div className="row">
                         <div className="col-lg-6 col-md-8 col-sm-11">
                             <div className="song-image">
-                                <img src={schsong} alt="schsong" />
+                                <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890922/Mynewdawnschool/schsong_fvepu8.jpg" alt="schsong" />
                             </div>
                         </div>
 

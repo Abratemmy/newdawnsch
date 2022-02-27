@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import "./Newnavbar.css";
 import {FaPhoneAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
-import logo from '../../images/newdawnlogo.jpeg';
 import { Link, NavLink } from 'react-router-dom';
 import {FiAlignRight,FiXCircle} from "react-icons/fi";
 import Popup from './popup.js';
@@ -35,7 +34,9 @@ function NewNavbar() {
                         <div className="text"></div>
                         <div className="number">
                             <FaPhoneAlt className="react-icon" /><span>08029748772, 08055372675 </span>
-                            <span className="navtop-email"><MdEmail className="react-icon" /><span>mynewdawncollege@gmail.com</span></span>
+                            <span className="navtop-email">
+                                <a href="mailto:mynewdawncollege@gmail.com" target="_blank"  rel="noopener noreferrer" ><MdEmail className="react-icon" /><span>mynewdawncollege@gmail.com</span></a>
+                            </span>
                         </div>
                     </div>
                     
@@ -46,16 +47,30 @@ function NewNavbar() {
 
                 <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                     <h3>My-New Dawn Account Details</h3>
-                    <div className="popup-account" style={{paddingTop:"20px"}}>Account Name : <span> My new dawn school</span></div>
-                    <div className="popup-account">Account Number : <span>0142303518</span></div>
+
+                    <div className="popup-account" style={{paddingTop:"20px"}}>Account Name : <span> MY NEWDAWN EDUCATIONAL CONSULT</span></div>
+                    <div className="popup-account">Account Number : <span>0083458557</span></div>
+                    <div className="popup-account">Bank Name : <span> STERLING BANK</span></div>
+
+                    <hr />
+
+                    <div className="popup-account" style={{paddingTop:"20px"}}>Account Name : <span>MY NEWDAWN EDUCATIONAL CONSULT. ACCT</span></div>
+                    <div className="popup-account">Account Number : <span>0019028331</span></div>
                     <div className="popup-account">Bank Name : <span>Guarantee Trust Bank(GTb)</span></div>
+
+                    <hr />
+
+                    <div className="popup-account" style={{paddingTop:"20px"}}>Account Name : <span>MY NEWDAWN EDUCATIONAL CONSULT. ACCT</span></div>
+                    <div className="popup-account">Account Number : <span>0243324811</span></div>
+                    <div className="popup-account">Bank Name : <span>Wema Bank </span></div>
+
                 </Popup>
             </div>
 
             <div className={navbar ? "navbar active":"navbar"}>
                 <div className="container nav-container">
                     <div className="nav-logo">
-                        <img src={logo} alt="NEWDAWNSCHOOL" width="130%" height="100" />
+                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645891711/Mynewdawnschool/newdawnlogo_adqqj9.jpg" alt="NEWDAWNSCHOOL" width="130%" height="100" />
                     </div>
 
                     <div className="navigation">

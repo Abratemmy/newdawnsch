@@ -42,7 +42,7 @@ export class Footer extends Component {
                                         <span>Tel : </span>08029748772, 08055372675
                                     </div>
                                     <div className="footer-text footer-textcontactinfo">
-                                        <span>Email: </span><br /> mynewdawncollege@mynewdawn.org.ng
+                                        <span>Email: </span><br /><a href="mailto:mynewdawncollege@gmail.com" target="_blank"  rel="noopener noreferrer">mynewdawncollege@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -51,10 +51,9 @@ export class Footer extends Component {
                                     <div className="footer-title">Connect with us</div>
                                     <div className="footer-text">
                                         <ul>
-                                            <li><a href=""className="social-icon footer-nav">Facebook</a></li>
-                                            <li><a href=""className="social-icon footer-nav">Twitter</a></li>
-                                            <li><a href=""className="social-icon footer-nav">Instagram</a></li>
-                                            <li><a href=""className="social-icon footer-nav">Youtube</a></li>
+                                            <li><a href="https://web.facebook.com/Newdawn-Schools-101637609139261/?ref=pages_you_manage"className="social-icon footer-nav">Facebook</a></li>
+                                            <li><a href="https://www.instagram.com/newdawncollege/"className="social-icon footer-nav">Instagram</a></li>
+                                        
                                         </ul>
                                     </div>
                                 </div>

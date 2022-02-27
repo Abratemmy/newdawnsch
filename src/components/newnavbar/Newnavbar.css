@@ -34,7 +34,8 @@
     width: 100%;
 }
 .newnav-top .number{
-    color: var(--blackColor)
+    color: var(--blackColor);
+    padding-left: 30px!important;
 }
 .newnav-top span{
     padding: 0px 10px 0px 3px;
@@ -57,7 +58,6 @@
     font-size:16px;
     font-weight: 600;
     transition: 0.4s all ease;
-
 }
 .nav-btn-nav:hover{
     color:#fff;
@@ -96,8 +96,8 @@
 }
 
 .nav-logo img{
-    width:140%;
-    height:90px;
+    width:130%;
+    height:100px;
 }
 .nav-menu{
     display: flex;
@@ -209,6 +209,14 @@
 .popup-account span{
     font-weight: 600;
 }
+.navtop-email a{
+    text-decoration: none;
+    color: var(--blackColor);
+    transition:0.4s all ease
+}
+.navtop-email a:hover{
+    color: rgb(58, 58, 58);
+}
 @media screen and (max-width: 1000px){
     .nav-icon{
         display: block;
@@ -278,14 +286,28 @@
         display: none
     }
     .nav-main-btn{
-        width: 30%;
-        margin-right: 0px;
-        right:-10px;
+        width: 15%;
+        margin-right: 30px;
     }
     .popup-inner{
         position: relative;
         padding: 20px;
         width: 70%;
+    }
+    .nav-logo{
+        width: 30%;
+        overflow-x: hidden;
+    }
+    .nav-logo img{
+        width: 100%;
+        height:80px;
+    }
+    .popup-account{
+        font-size: 15px;
+        font-family: var(--textFamily);
+    }
+    .popup-account span{
+        font-weight: 550;
     }
 }
 
@@ -312,8 +334,8 @@
         display: none;
     }
     .nav-main-btn{
-        margin-right: 0px;
-        width: 100%;
+        margin-right: 30px;
+        width: 40%;
         position: relative;
         right:-10px;
     }
@@ -328,6 +350,6 @@
     }
     .nav-logo img{
         width: 100%;
-        height:70px;
+        height:80px;
     }
 }

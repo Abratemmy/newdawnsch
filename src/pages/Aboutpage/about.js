@@ -1,10 +1,6 @@
 import React from 'react';
 import Otherpage from '../../components/otherpage/Otherpage';
 import "./about.css";
-import visionmisssion from "../../images/visionmission.jpg";
-import schoolsong from "../../images/schsong.JPG";
-import teacher from "../../images/teachers.jpg";
-import faq from "../../images/faq.jpg"
 import { NavLink } from 'react-router-dom';
 
 function About() {
@@ -40,7 +36,7 @@ function About() {
                             <div className="about-card">
                                 <NavLink to="/about/vission_mission" className="card-nav">
                                     <div className="about-card-text">
-                                        <img src={visionmisssion} alt="vision-mission" width="100%" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890554/Mynewdawnschool/visionmission_zokdsm.jpg" alt="vision-mission" width="100%" />
                                         <div className="card-text">Vision | Mission</div>
                                     </div>
                                     <div className="card-viewmore">View More</div>
@@ -51,7 +47,7 @@ function About() {
                             <div className="about-card">
                                 <NavLink to="/about/school_song" className="card-nav">
                                     <div className="about-card-text">
-                                        <img src={schoolsong} alt="vision-mission" width="100%" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890922/Mynewdawnschool/schsong_fvepu8.jpg" alt="vision-mission" width="100%" />
                                         <div className="card-text">School Song</div>
                                     </div>
                                     <div className="card-viewmore">View More</div>
@@ -62,7 +58,7 @@ function About() {
                             <div className="about-card">
                                 <NavLink to="/about/staffs" className="card-nav">
                                     <div className="about-card-text">
-                                        <img src={teacher} alt="vision-mission" width="100%" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890986/Mynewdawnschool/teachers_thqlck.jpg" alt="vision-mission" width="100%" />
                                         <div className="card-text">Our Experience Staff</div>
                                     </div>
                                     <div className="card-viewmore">View More</div>
@@ -73,7 +69,7 @@ function About() {
                             <div className="about-card">
                                 <NavLink to="/about/faqs" className="card-nav">
                                     <div className="about-card-text">
-                                        <img src={faq} alt="vision-mission" width="100%" />
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890594/Mynewdawnschool/faq_x6hlqu.jpg" alt="vision-mission" width="100%" />
                                         <div className="card-text">FAQs</div>
                                     </div>
                                     <div className="card-viewmore">View More</div>

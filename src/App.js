@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import Footer from './components/footer/footer';
 import Router from './components/Router';
@@ -15,7 +15,7 @@ function App() {
   //   setTimeout(()=>{
   //     setTimedPopup(true)
   //   }, 3000)
-  // }, [])
+  // }, <Router />)
 
 
   return (

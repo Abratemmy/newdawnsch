@@ -1,5 +1,5 @@
 .home-container{
-    background:url("../../images/newdawnbg.jpg");
+    background:url("https://res.cloudinary.com/hayteetech/image/upload/v1645890566/Mynewdawnschool/newdawnbg_yqquvh.jpg");
     width: 100%;
     height:450px;
     background-size: cover;
@@ -86,7 +86,7 @@
     font-weight: 550
 }
 .home-provide{
-    background:linear-gradient(180deg, rgba(189, 217, 233, 0.966), rgba(179, 219, 238, 0.925)), url("../../images/homeprovide.jpg");
+    background:linear-gradient(180deg, rgba(189, 217, 233, 0.966), rgba(179, 219, 238, 0.925)), url("https://res.cloudinary.com/hayteetech/image/upload/v1645890776/Mynewdawnschool/homeprovide_riptnz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -139,7 +139,7 @@
 
 /* home testimonial starts here */
 .testimonial{
-    background:linear-gradient(180deg, rgba(17, 17, 17, 0.966), rgba(13, 15, 15, 0.973)), url("../../images/homeprovide.jpg");
+    background:linear-gradient(180deg, rgba(17, 17, 17, 0.966), rgba(13, 15, 15, 0.973)), url("https://res.cloudinary.com/hayteetech/image/upload/v1645890776/Mynewdawnschool/homeprovide_riptnz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -263,7 +263,7 @@
 
 @media screen and (max-width: 760px){
     .home-container{
-        background:url("../../images/newdawnbg.jpg");
+        background:url("https://res.cloudinary.com/hayteetech/image/upload/v1645890566/Mynewdawnschool/newdawnbg_yqquvh.jpg");
         width: 100%;
         height:350px;
         background-size: cover;

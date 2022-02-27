@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Otherpage from '../../components/otherpage/Otherpage';
 import './contact.css';
 import { FaHome, FaEnvelope, FaPhone,  FaInstagram, FaFacebookF } from 'react-icons/fa';
 import Form from './Form';
+import Formsuccess from './formsuccess';
 
-export class Contact extends Component {
-    render() {
+const Contact = () => {
+    const [formisSubmitted, setFormisSubmitted]= useState(false);
+    const submitForm= () =>{
+        setFormisSubmitted(true);
+    }
         return (
             <div className="Contactpage">
                 <Otherpage title="Contact" subtitle="contact" />
@@ -63,7 +67,8 @@ export class Contact extends Component {
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="contact-form">
-                                <Form />
+                                { !formisSubmitted ? <Form submitForm={submitForm} /> : <Formsuccess />}
+                            
                             </div>
                         </div>
                     </div>
@@ -73,7 +78,7 @@ export class Contact extends Component {
                 
             </div>
         )
-    }
+
 }
 
 export default Contact

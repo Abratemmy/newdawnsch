@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import "./newhome.css";
-import homejourney from "../../images/homejourney.JPG";
 import {BiMusic} from "react-icons/bi";
 import {BsPersonFill} from "react-icons/bs";
 import {GiBubbleField , GiGraduateCap} from "react-icons/gi";
@@ -81,7 +80,7 @@ export class Newhome  extends Component {
 
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="home-journey">
-                                <img src={homejourney} alt="loading" width="100%" />
+                                <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890529/Mynewdawnschool/homejourney_ulfxph.jpg" alt="loading" width="100%" />
                             </div>
                         </div>
                     </div>
