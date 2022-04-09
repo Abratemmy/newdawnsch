@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./Newnavbar.css";
 import {FaPhoneAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {FiAlignRight,FiXCircle} from "react-icons/fi";
 import Popup from './popup.js';
 
@@ -86,7 +86,7 @@ function NewNavbar() {
                                         <li><NavLink to="/about"exact className="dropdown-nav"onClick={handleClick}>About</NavLink></li>
                                         <li><NavLink to="/about/vission_mission" className="dropdown-nav"onClick={handleClick}>Vision & mission</NavLink></li>
                                         <li><NavLink to="/about/school_song" className="dropdown-nav"onClick={handleClick}>School song</NavLink></li>
-                                        <li><NavLink to="/about/staffs" className="dropdown-nav"onClick={handleClick}>Our Teacher</NavLink></li>
+                                        <li><NavLink to="/about/director" className="dropdown-nav"onClick={handleClick}>Our Director</NavLink></li>
                                         <li><NavLink to="/about/faqs" className="dropdown-nav"onClick={handleClick}>Faqs</NavLink></li>
                                     </ul>
                                 </div>

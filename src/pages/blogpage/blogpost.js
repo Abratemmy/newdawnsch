@@ -1,23 +1,43 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
-import blogpost from "../blogpage/data.js";
 import "./blog.css";
 import {BiTime} from "react-icons/bi";
 import {FaRegCommentDots} from "react-icons/fa";
 import ReactPaginate from "react-paginate";
+import axios from 'axios';
+import moment from 'moment';
 
 const Blogpost = () => {
+    const [blog, setBlog] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+	useEffect(() =>{
+        const fetchBlogs = async () =>{
+            setLoading(true);
+            const res = await axios.get('https://wp.mynewdawn.org.ng/wp-json/wp/v2/blogs');
+            setBlog(res.data);
+            setLoading(false);
+        }
+        fetchBlogs()
+    }, []);
+
+    const Loading = () =>{
+        return(
+            <>
+                <div className="loading"></div>
+            </>
+    )}
 
     const[pageNumber, setPageNumber] = useState(0);
 
-    const newsPerPage = 5
+    const newsPerPage = 4
     const newsVisited = pageNumber * newsPerPage
 
-    const displayNews = blogpost.slice(newsVisited, newsVisited + newsPerPage).map((blogpost)=>{
+    const displayNews = blog.slice(newsVisited, newsVisited + newsPerPage).map((blogpost, i)=>{
         return(
-            <div className="row blogpost-container">
+            <div className="row blogpost-container" key={i}>
                 <div className="col-lg-5 col-md-5 col-sm-5">
-                    <img src={blogpost.image} alt="loading" width="100%" />
+                    <img src={blogpost.acf.blogimage} alt="loading" width="100%" />
                     <div className="blogpost-banner">Event<br />News </div>
                 </div>
 
@@ -25,11 +45,11 @@ const Blogpost = () => {
                     
                     <div className="blogpost-content">
                         <NavLink to= {`/newsupdate/${blogpost.id}`} className="blogpost-nav">
-                            <div className="blogpost-title">{blogpost.title}</div>
-                            <div className="blogpost-text">{blogpost.excerpt} </div>
+                            <div className="blogpost-title">{blogpost.title.rendered}</div>
+                            <div className="blogpost-text">{blogpost.acf.blogexcerpt} </div>
                         </NavLink>
                         <div className="blogpostdate">
-                            <span><BiTime className="blogpost-icon" /></span>{blogpost.date}
+                            <span><BiTime className="blogpost-icon" /></span>{moment(blogpost.date).format("MMMM Do YYYY")}
                             <span><FaRegCommentDots className="blogpost-icon" /> Comment off</span>
                         </div>
                     </div>
@@ -40,7 +60,7 @@ const Blogpost = () => {
         )
     })
 
-    const pageCount = Math.ceil(blogpost.length / newsPerPage);
+    const pageCount = Math.ceil(blog.length / newsPerPage);
 
     const changePage = ({selected})=>{
         setPageNumber(selected)
@@ -50,20 +70,23 @@ const Blogpost = () => {
 
     
     return (
-        <div>         
-            {displayNews}
-            <ReactPaginate 
-                previousLabel={"Prev"}
-                nextLAbel={"Next"}
-                pageCount={pageCount}
-                onPageChange={changePage}
-                containerClassName={"paginationBttns"}
-                previousLinkClassName={"previousBttn"}
-                nextLinkClassName={"nextBttn"}
-                disabledClassName={"paginationDisabled"}
-                activeClassName={"paginationActive"}            
-            />
-                                
+        <div>  
+            {loading ? <Loading /> : (  
+                <div>     
+                    {displayNews}
+                    <ReactPaginate 
+                        previousLabel={"Prev"}
+                        nextLAbel={"Next"}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={"paginationBttns"}
+                        previousLinkClassName={"previousBttn"}
+                        nextLinkClassName={"nextBttn"}
+                        disabledClassName={"paginationDisabled"}
+                        activeClassName={"paginationActive"}            
+                    />
+                </div>
+            )}        
         </div>
     )
 }

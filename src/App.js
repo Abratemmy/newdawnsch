@@ -6,6 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NewNavbar from './components/newnavbar/NewNavbar';
 // import Popup from './components/newnavbar/popup';
+import {createBrowserHistory} from 'history';
+
+export const customHistory = createBrowserHistory(); 
 
 
 function App() {
@@ -24,7 +27,7 @@ function App() {
         {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
             <h3>My-New Dawn Account Details new</h3>
         </Popup> */}
-        <Router />
+        <Router history={customHistory}/>
       <Footer />
     </div>
   );

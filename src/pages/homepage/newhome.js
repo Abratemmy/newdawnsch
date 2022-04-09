@@ -7,13 +7,38 @@ import {GiBubbleField , GiGraduateCap} from "react-icons/gi";
 import {FaHandsHelping, FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 import {IoLogoCodepen} from "react-icons/io";
 import testimonydata from "./testimonydata.js";
-import data from  "../../pages/blogpage/data.js";
 import Slider from 'react-slick';
+import moment from 'moment';
 
 
 export class Newhome  extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             data:[],
+             loading: false,
+        }
+    }
+    componentDidMount(){
+            this.setState({
+                loading: true,
+            })
+        return fetch(`https://wp.mynewdawn.org.ng/wp-json/wp/v2/blogs?per_page=3`)
+        .then((response) =>response.json())
+        .then((responseJson) =>{
+            this.setState({
+                data: responseJson,
+                loading: false,
+            });
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
+
+    
     render(){
- 
         var testimony = {
             dots:true,
             lazyLoad:true,
@@ -32,11 +57,18 @@ export class Newhome  extends Component {
             className:"homeblogcss",
             responsive:[
                 {
-                    breakpoint:960,
+                    breakpoint:1000,
+                    settings:{
+                        slidesToShow:2,
+                    }
+                },
+                {
+                    breakpoint:760,
                     settings:{
                         slidesToShow:1,
                     }
                 }
+
             ]
         }
         return (
@@ -46,7 +78,7 @@ export class Newhome  extends Component {
                         <div className="homecontainer-text">
                             <div className="home-text">Education is the most powerful weapon</div>
                             <h1>Enjoy Learning Center</h1>
-                            <p>Education in its general sense is a form of learning in the knowledge, skills and habit</p>
+                            <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it</p>
                             <button className="main-btn">
                                 <NavLink to="/contact" className="btn-nav">Contact</NavLink>
                             </button>
@@ -71,7 +103,7 @@ export class Newhome  extends Component {
                                     We also expose students to the cultural and ethical background of Nigeria to help them understand and appreciate their cultural heritage and unity in diversity.
                                 </div>
                             </div>
-                            <div className="" style={{textAlign:"center"}}>
+                            <div className="home-btn" style={{textAlign:"center"}}>
                                 <button className="main-btn">
                                     <NavLink to="/about" className="btn-nav">Learn more</NavLink>
                                 </button>
@@ -186,22 +218,26 @@ export class Newhome  extends Component {
                             <h1>Our News & Events</h1>
                         </div>
 
-                        <Slider {...homeblog} className="home-blog-slide">
-                            {data.map(item =>{
-                                    return(
-                                        <div key={item.id} className="container">
-                                            <div className="blog-container">
-                                                <img src={item.image} alt="loading" className="homeblog-img" />
-                                                <div className="home-blog-title">{item.title}</div>
-                                                <div className="home-blogdate">{item.date}</div>
-                                                <div className="homeblog-text">{item.excerpt}</div>
-                                                <div className="homeblog-readmore">
-                                                    <NavLink to={`/newsupdate/${item.id}`} className="homeblognav">Read More </NavLink></div>
-                                            </div>
-                                        </div> 
-                                    )
-                                })}
-                        </Slider>
+                        {this.state.loading ? (<div>
+                                <div className="loading" style={{paddingBottom: "30px"}}></div>
+                            </div>) : (  
+                            <Slider {...homeblog} className="home-blog-slide">
+                                {this.state.data.map((item, i)=>{
+                                        return(
+                                            <div key={item.id} className="container">
+                                                <div className="blog-container">
+                                                    <img src={item.acf.blogimage} alt="loading" className="homeblog-img" />
+                                                    <div className="home-blog-title"><p  dangerouslySetInnerHTML={{__html:  item.title.rendered}} /></div>
+                                                    <div className="home-blogdate">{moment(item.date).format("MMMM Do YYYY")}</div>
+                                                    <div className="homeblog-text">{item.acf.blogexcerpt}</div>
+                                                    <div className="homeblog-readmore">
+                                                        <NavLink to={`/newsupdate/${item.id}`} className="homeblognav">Read More </NavLink></div>
+                                                </div>
+                                            </div> 
+                                        )
+                                    })}
+                            </Slider>
+                        )}
                         
                         <div className="" style={{textAlign:"center", paddingBottom:"40px"}}>
                             <button className="main-btn" style={{marginTop:"0px"}}>

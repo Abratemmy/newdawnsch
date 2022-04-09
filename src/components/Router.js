@@ -12,6 +12,7 @@ import Blog from '../pages/blogpage/blog';
 import SinglePost from '../pages/blogpage/singlePost';
 import Gallery from '../pages/gallery/gallery';
 
+
 const Router = ()=>{
     return(
         <Switch>
@@ -19,14 +20,14 @@ const Router = ()=>{
             <Route exact path="/newdawnsch" component={Newhome} />
             <Route exact path="/about" component={About} />
             <Route exact path='/contact' component={Contact} />
-            <Route exact path="/about/staffs" component={Teacher} />
+            <Route exact path="/about/director" component={Teacher} />
             <Route exact path="/about/school_song" component={Schoolsong} />
             <Route exact path="/about/vission_mission" component={Visionmission} />
             <Route exact path="/about/faqs" component={Faqs} />
             <Route exact path="/admission" component={Admission} />
             <Route exact path="/tuition" component={Tuition} />
             <Route exact path="/newsupdate" component={Blog} />
-            <Route exact path ='/newsupdate/:postId' component={SinglePost} />
+            <Route exact path ='/newsupdate/:id' component={SinglePost} />
             <Route exact path="/gallery" component={Gallery} />
         </Switch>
     )

@@ -40,7 +40,7 @@ const Contact = () => {
                                         {/* <div className="col-lg-1 col-md-1 col-sm-1"></div> */}
                                         <div className="col-lg-10 col-md-10 col-sm-10">
                                             <div className="contact-details">
-                                                <span>mynewdawncollege@mynewdawn.org.ng</span>
+                                                <span>mynewdawncollege@gmail.com</span>
                                             </div>
                                         </div>
                                     </div>

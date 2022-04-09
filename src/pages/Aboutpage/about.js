@@ -56,10 +56,10 @@ function About() {
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <div className="about-card">
-                                <NavLink to="/about/staffs" className="card-nav">
+                                <NavLink to="/about/director" className="card-nav">
                                     <div className="about-card-text">
-                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1645890986/Mynewdawnschool/teachers_thqlck.jpg" alt="vision-mission" width="100%" />
-                                        <div className="card-text">Our Experience Staff</div>
+                                        <img src="https://res.cloudinary.com/hayteetech/image/upload/v1649406857/Mynewdawnschool/newdawndirector_cr1mqx.jpg" alt="vision-mission" width="100%" />
+                                        <div className="card-text">Our Director</div>
                                     </div>
                                     <div className="card-viewmore">View More</div>
                                 </NavLink>

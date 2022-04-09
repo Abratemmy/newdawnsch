@@ -2,8 +2,16 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Otherpage from '../../components/otherpage/Otherpage';
 import "./admission.css";
+import jsPDF from "jspdf";
+import form from "../../images/admissionform.jpeg"
 
 function Admission() {
+    const pdfGenerate=()=>{
+        var doc=new jsPDF('landscape', 'px', 'a4', 'false');
+        doc.addImage(form, 'JPEG',65, 30, 350, 400)
+        doc.save('admissionform.pdf')
+
+    }
     return (
         <div>
             <Otherpage title="Admission" subtitle="admission" />
@@ -41,6 +49,30 @@ function Admission() {
                     <div className="admission-text">
                         Most successful applicants join at the start of the School
                         year in September; occasionally students are admitted during the course of the school year based on availability.
+                    </div>
+
+                    <div className='admission-form'>
+                        <div className='title-header'>
+                            <h1>Admission form</h1>
+                            <p style={{fontSize:"17px"}}>Download our admission form by clicking on the image below, fill the form and send the filled form to us at mynewdawncollege@gmail.com or bring the printed form to our school premises for the next steps</p>
+                            <h6><span>Note:</span> Our admission form attract the sum of N1000 Only(One thousand naira only)</h6>
+                        </div>
+
+                        <div className='row'>
+                            <div className='col-lg-3 col-md-3 col-sm-12'></div>
+                            <div className='col-lg-6 col-md-6 col-sm-12'>
+                                <div className='admission-img'>
+                                    <img src={form}  alt="admission-form" />
+                                    <div className='overlay'>
+                                        <button onClick={pdfGenerate}>Download Admission form</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div className='col-lg-3 col-md-3 col-sm-12'></div>
+                        </div>
+                        
+                       
                     </div>
 
                     <div className="admission-contact">
