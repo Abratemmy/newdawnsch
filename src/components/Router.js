@@ -17,7 +17,7 @@ const Router = ()=>{
     return(
         <Switch>
             
-            <Route exact path="/newdawnsch" component={Newhome} />
+            <Route exact path="/" component={Newhome} />
             <Route exact path="/about" component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path="/about/director" component={Teacher} />
