@@ -1,11 +1,6 @@
 import React from 'react';
 import './GeneralLanding.css';
 import { NavLink } from 'react-router-dom';
-import img1 from "../../images/img1.jpg";
-import img2 from "../../images/img2.jpg";
-import icon1 from '../../images/icon1.png'
-import icon2 from '../../images/icon2.png'
-import logo from '../../images/logo.png';
 function GeneralLanding() {
     return (
         <div className="landingPage" style={{ position: 'relative' }}>
@@ -19,7 +14,7 @@ function GeneralLanding() {
                 <div className='container'>
                     <div className='header'>
                         <div className="landingLogo">
-                            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
+                            <NavLink to="/"><img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088606/Mynewdawnschool/logo_lv4dry.png' alt="logo" /></NavLink>
                         </div>
 
                         <div className="headerContact">
@@ -57,8 +52,8 @@ function GeneralLanding() {
 
                     <div className='about_content'>
                         <div className='image'>
-                            <img src={img2} alt="img2" className='img img1' />
-                            <img src={img1} alt="img1" className='img img2' />
+                            <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743098466/Mynewdawnschool/aboutImage_gmwxkz.jpg' alt="img2" className='img img1' />
+                            <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088605/Mynewdawnschool/img1_arjlwb.jpg' alt="img1" className='img img2' />
                         </div>
 
                         <div className="about_textContainer">
@@ -82,7 +77,7 @@ function GeneralLanding() {
                             <NavLink to="/college" className='buttonNav'>
                                 <div className='card'>
                                     <div className='cardImage'>
-                                        <img src={icon1} alt="" />
+                                        <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088602/Mynewdawnschool/icon1_xjhvde.png' alt="" />
                                     </div>
 
                                     <div className='cardTitle'>My Newdawn College</div>
@@ -92,7 +87,7 @@ function GeneralLanding() {
                             <NavLink to="/education_program" className='buttonNav'>
                                 <div className='card'>
                                     <div className='cardImage'>
-                                        <img src={icon2} alt="" />
+                                        <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088603/Mynewdawnschool/icon2_wvnhkg.png' alt="" />
                                     </div>
                                     <div className='cardTitle'>My Newdawn Continuing Education</div>
                                     <div className='cardText'>For professionals and lifelong learners, our continuing education courses help you develop new skills, earn certifications, and stay competitive in today’s evolving job market.</div>

@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .CEducation .topBanner .wrapper{
     max-width: 500px;
@@ -174,8 +174,8 @@
 /* session 2 here */
 .CEducation .CSession2{
     display: block;
-    background: rgba(255, 255, 255, 0);
-    background-image: url('../../images/background.png');
+    background: rgba(55, 76, 116, 0.007);
+    background-image: url('https://res.cloudinary.com/hayteetech/image/upload/v1743088598/Mynewdawnschool/background_v40vdb.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -190,86 +190,40 @@
     padding: 50px 0px;
     overflow-x: hidden;
 }
-.CEducation .CSession2 .Ccontent{
-    display: flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    width: 100%
-}
 
-.CEducation .CSession2 .Ccontent .Ccard{
-    flex: 1!important;
-    max-width: 50%;
-}
-@media screen and (max-width: 800px) {
-    .CEducation .CSession2 .Ccontent{
-        flex-direction: column;
-    }
-    .CEducation .CSession2 .Ccontent .Ccard{
-        max-width: 100%;
-    }
-}
-.CEducation .CSession2 .Ccontent .Ccard .title{
-    font-size: xx-large;
-    font-weight: 600;
-    padding-bottom: 20px;
-    color: var(--blackColor);
-}
-.CEducation .CSession2 .Ccontent .Ccard p{
+
+.CEducation .CSession2 .Ccontent .text{
     font-size: 15px;
     color: var(--blackColor);
     font-family: var(--textFamily);
     padding-bottom: 10px;
     line-height: 28px;
-}
-.CEducation .CSession2 .Ccontent .Ccard .programs{
-    padding-bottom: 20px;
-}
-.CEducation .CSession2 .Ccontent .Ccard .pTitle{
-    font-size: 18px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    color: var(--blackColor);
-}
-.CEducation .CSession2 .Ccontent .Ccard .pTitle span{
-    background: var(--blue2Color);
-    height: 10px;
-    width: 50px;
-    border-radius: 50%;
-    padding: 5px 10px;
-    color: #fff;
-    margin-right: 8px;
-    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
-}
-.CEducation .CSession2 .Ccontent .Ccard .pText{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 15px;
-    color: var(--blackColor);
-    font-family: var(--textFamily);
-    padding-bottom: 10px;
-    line-height: 28px;
+    margin: 20px 0px 5px 0px;
 }   
+.CEducation .CSession2 .Ccontent li{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: var(--textFamily);
+}
+.CEducation .CSession2 .Ccontent img{
+    border-radius: 40px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+
+}
 .CEducation .CSession2 .Ccontent .Ccard .pText .logo{
     font-size: 20px;
     color: var(--blueColor);
-    font-weight: 700;
+    font-weight: 700;   
 }
-.CEducation .CSession2 .Ccontent .CImage img{
-    position: relative;
-    flex: 1!important;
-    width: 100%;
-    height: 40px;
-    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
-}
+
 
 
 /* session3 starts here */
 .CEducation .CSession3{
     position: relative;
 }
-.CEducation .CSession3 .Cservices{
+.CEducation  .educationBanner{
     background-color: var(--blueColor);
     width: 100%;
     height: 140px;
@@ -280,12 +234,12 @@
     color: #fff;
     text-transform: uppercase;
 } 
-.CEducation .CSession3 .Cservices .title{
+.CEducation .educationBanner .title{
     font-size: xx-large;
     font-weight: 600;
     text-align: center;
 }
-.CSession3 .Csession3Wrapper .subtitle{
+.CEducation .subtitle{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -293,15 +247,15 @@
     padding: 10px 0px;
     font-size: large
 }
-.CSession3 .Csession3Wrapper .left,
-.CSession3 .Csession3Wrapper .right{
+.CEducation .left,
+.CEducation .right{
     width: 100px;
     border-bottom: 3px solid var(--blue2Color);
 }
 .CSession3 .Csession3Wrapper{
     display: block;
     background: rgba(255, 255, 255, 0.41);
-    background-image: url('../../images/background2.png');
+    background-image: url('https://res.cloudinary.com/hayteetech/image/upload/v1743088597/Mynewdawnschool/background2_bfbemv.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -315,11 +269,34 @@
     position: relative;
     padding: 50px 0px;
 }
+.CSession3 .Csession3Wrapper .headerWrapper{
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+    margin-bottom: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .CSession3 .Csession3Wrapper .headerWrapper{
+        max-width: 100%;
+    }
+    
+}
+.CSession3 .Csession3Wrapper .headerWrapper p{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding: 10px 0px;
+    line-height: 28px;
+}
 .CSession3 .Csession3Wrapper .title{
     font-size: xx-large;
     font-weight: 600;
 }
-.CEducation .CSession3 .Cservices .subtitle{
+.CEducation .CSession3 .subtitle{
     display: flex;
     align-items: center;
     gap: 10px;

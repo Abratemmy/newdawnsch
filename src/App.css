@@ -6,8 +6,8 @@
 :root{
   --textFamily:'Lato', sans-serif;
   --blackColor: #2d2d2d;
-  --blueColor:rgb(11, 11, 180);
-  --blue2Color: rgb(188, 226, 255);
+  --blueColor:#0b0bb4;
+  --blue2Color: #bce2ff;
   --yellowColor: #bcd631;
   --background: 
 }

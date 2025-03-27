@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import "./ContinuingEducation.css";
 import { NavLink } from 'react-router-dom';
-import edu1 from '../../images/edu1.png';
 import { FaHome } from "react-icons/fa";
-import edu2 from '../../images/edu2.png';
 import { GiCheckMark } from "react-icons/gi";
-import step1 from '../../images/step1.jpg';
-import step2 from '../../images/step2.jpg';
-import step3 from '../../images/step3.png';
 import course1 from '../../images/course1.jpg';
 import course2 from '../../images/course2.jpeg';
 import course3 from '../../images/course3.jpg';
-import logo from '../../images/logo2.png';
 
 function ContinuingEducation() {
     const [show, setShow] = useState(false);
@@ -21,7 +15,7 @@ function ContinuingEducation() {
                 <div className='container'>
                     <div className='header'>
                         <div className="landingLogo">
-                            <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
+                            <NavLink to="/"><img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088607/Mynewdawnschool/logo2_doqqvj.png' alt="logo" /></NavLink>
                         </div>
 
                         <div className="headerContact">
@@ -56,7 +50,7 @@ function ContinuingEducation() {
                         </div>
 
                         <div className='wrapperImage'>
-                            <img src={edu1} alt="edu1" />
+                            <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088598/Mynewdawnschool/edu1_zisjua.png' alt="edu1" />
                         </div>
                     </div>
                 </div>
@@ -67,52 +61,27 @@ function ContinuingEducation() {
                 </div>
             </div>
 
-            <div className='CSession2'>
-                <div className='container'>
-                    <div className="Ccontent">
-                        <div className='Ccard'>
-                            <div className='title'>Achieve Your Goals With Newdawn</div>
-                            <p>Our Continuing Education Department specializes in providing high-quality training programs for adults and professionals in the health sector. We focus on healthcare services, social caregiving, and safety training.</p>
-                            <div className='programs'>
-                                <div className='pTitle'>Program OverView</div>
-                                <div className="pText">We offer two comprehensive programs:</div>
-                            </div>
 
-                            <div className='programs'>
-                                <div className='pTitle'><span>1</span>Certificate Program (4 months)</div>
-                                <div className="pText"><div className="icon"><GiCheckMark className='logo' /></div>- 4 weeks of classroom instruction</div>
-                                <div className="pText"><div className="icon"><GiCheckMark className='logo' /></div>-  12 weeks of clinical experience</div>
-
-                            </div>
-                            <div className='programs'>
-                                <div className='pTitle'><span>2</span>Diploma Program (6 months)</div>
-                                <div className="pText"><div className="icon"><GiCheckMark className='logo' /></div>- 4 weeks of classroom instruction</div>
-                                <div className="pText"><div className="icon"><GiCheckMark className='logo' /></div>-  20 weeks of clinical experience</div>
-                            </div>
-                        </div>
-
-                        <div ClassName='CImage'>
-                            <img src={edu2} alt="edu2" className='' />
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             {/* session 3 */}
             <div className='CSession3'>
-                <div className='Cservices'>
+                <div className='educationBanner'>
                     <div className='title'>What we are offering</div>
-                    <div className='subtitle' ><div className='left'></div>Our services<div className='right'></div></div>
+                    <div className='subtitle' ><div className='left'></div>Our Services<div className='right'></div></div>
                 </div>
                 <div className='Csession3Wrapper'>
                     <div className='container'>
+                        <div className='headerWrapper'>
+                            <div className='title'>Achieve Your Goals With Newdawn</div>
+                            <p>Our Continuing Education Department specializes in providing high-quality training programs for adults and professionals in the health sector. We focus on healthcare services, social caregiving, and safety training.</p>
+                        </div>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <div className='title'>How It Works</div>
                             <div className='subtitle'><div className='left'></div>Our services<div className='right'></div></div>
                         </div>
                         <div className="contentWrapper">
                             <div className='image'>
-                                <img src={step1} alt="img1" className='img img1' />
+                                <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088607/Mynewdawnschool/step1_imhr6b.jpg' alt="img1" className='img img1' />
                                 <div className="absolute"><span>01</span></div>
                             </div>
 
@@ -122,25 +91,18 @@ function ContinuingEducation() {
                                     At My Newdawn, we understand that balancing education with work and personal commitments can be challenging. That’s why our Continuing Education Department offers flexible courses designed to fit your schedule while equipping you with the skills needed for a successful career in the healthcare sector.
                                 </div>
                                 <div className='text'>
-                                    Our programs specialize in healthcare services, social caregiving, and safety training, providing practical, hands-on learning to prepare you for real-world challenges. Whether you’re looking to enter the healthcare industry or advance your current career, we offer two comprehensive options:
+                                    Our programs specialize in healthcare services, social caregiving, and safety training, providing practical, hands-on learning to prepare you for real-world challenges.
+                                    We prepare our students to excel in their roles, make a meaningful impact in their communities, and advance their careers in the ever-growing healthcare industry.
                                 </div>
                                 <div className="text">
-                                    <strong> Certificate Program (4 months)</strong>
+                                    <strong> Program Length</strong>
                                     <ul>
-                                        <li> 4 weeks of classroom instruction</li>
-                                        <li>12 weeks of clinical experience</li>
+                                        <li> 26 Weeks</li>
+                                        <li>700 Hours</li>
 
                                     </ul>
                                 </div>
-                                <div className='text'>
-                                    <strong>Diploma Program (6 months)</strong>
-                                    <ul>
-                                        <li> 4 weeks of classroom instruction</li>
-                                        <li>20 weeks of clinical experience</li>
 
-                                    </ul>
-
-                                </div>
                                 <div className='text'>
                                     Take control of your future with our flexible, career-focused programs.<strong>Enroll today and start your journey toward professional excellence!</strong>
                                 </div>
@@ -153,7 +115,7 @@ function ContinuingEducation() {
                             <div className='courseCard'>
                                 <div className='cardCourse'>
                                     <div className='cardImage'>
-                                        <img src={course1} alt="" />
+                                        <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088597/Mynewdawnschool/course1_vy5fvu.jpg' alt="" />
                                     </div>
 
                                     <div className="cardAbs">
@@ -165,7 +127,7 @@ function ContinuingEducation() {
                                 </div>
                                 <div className='cardCourse'>
                                     <div className='cardImage'>
-                                        <img src={course3} alt="" />
+                                        <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088598/Mynewdawnschool/course3_mrzric.jpg' alt="" />
                                     </div>
                                     <div className="cardAbs">
                                         <div className='cardTitle'>Social Caregiving</div>
@@ -174,7 +136,7 @@ function ContinuingEducation() {
                                 </div>
                                 <div className='cardCourse'>
                                     <div className='cardImage'>
-                                        <img src={course2} alt="" />
+                                        <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088603/Mynewdawnschool/course2_u8vlyc.jpg' alt="" />
                                     </div>
                                     <div className="cardAbs">
                                         <div className='cardTitle'>Safety Training</div>
@@ -199,14 +161,14 @@ function ContinuingEducation() {
 
                             </div>
                             <div className='image'>
-                                <img src={step2} alt="img1" className='img img1' />
+                                <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088607/Mynewdawnschool/step2_yvxslb.jpg' alt="img1" className='img img1' />
                                 <div className="absolute"><span>02</span></div>
                             </div>
                         </div>
 
                         <div className="contentWrapper">
                             <div className='image'>
-                                <img src={step3} alt="img1" className='img img1' />
+                                <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743088608/Mynewdawnschool/step3_p28twj.png' alt="img1" className='img img1' />
                                 <div className="absolute"><span>03</span></div>
                             </div>
 
@@ -220,6 +182,65 @@ function ContinuingEducation() {
                     </div>
                 </div>
 
+            </div>
+
+            {/* session2 here */}
+            <div className='CSession2'>
+                <div className='educationBanner'>
+                    <div className='title'>What You Will Learn In The Classroom</div>
+                    <div className='subtitle' ><div className='left'></div>Our Courses<div className='right'></div></div>
+                </div>
+                <div className='container'>
+                    <div className="Ccontent">
+                        <div className='text'>
+                            At <strong>My Newdawn,</strong> our healthcare training programs are designed to equip you with the skills and knowledge needed to provide quality care and support to individuals in various healthcare settings. Our courses focus on healthcare services, social caregiving, and safety training, preparing you for a fulfilling career in the healthcare sector.
+
+                            Through our flexible programs, you will develop a strong foundation in compassionate
+                            care, emphasizing respect, sensitivity, and professionalism. You will also gain
+                            hands-on experience working alongside healthcare professionals. Whether assisting individuals
+                            in their communities or within healthcare institutions,
+                            you will play a crucial role in enhancing their well-being and quality of life.
+                        </div>
+
+                        <div className="subtitle">Modules covered in class include:</div>
+                        <div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start' }}>
+
+                            <ul style={{ width: '100%' }}>
+
+                                <li>Introduction to healthcare assistant </li>
+                                <li>Roles and responsibilities of caregiver</li>
+                                <li>Legal and ethical issues in caregiving </li>
+                                <li>Cultural diversity and caregiving</li>
+                                <li>Communication skills</li>
+                                <li>Personal and Professional border</li>
+                                <li>Time management and Scheduling</li>
+                                <li>Stress Management</li>
+                                <li>Observing reporting and documentaion</li>
+                                <li>Transfer Ettiquete </li>
+                                <li>Transfer skills </li>
+                                <li>Patient grooming and personal hygiene </li>
+                                <li>Assisting with personal care</li>
+                            </ul>
+                            <div style={{ width: '100 %' }}>
+                                <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743102262/Mynewdawnschool/Program_Length_xdzfux.png' alt="" width='80%' />
+
+                            </div>
+                        </div>
+                        {/* <div>
+                            <div className='Ccard'>
+                                <div className='title'>Achieve Your Goals With Newdawn</div>
+                                <p>Our Continuing Education Department specializes in providing high-quality training programs for adults and professionals in the health sector. We focus on healthcare services, social caregiving, and safety training.</p>
+
+                                <div className='programs'>
+                                    <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743102262/Mynewdawnschool/Program_Length_xdzfux.png' alt="Program_Length" className='img' width='90%' />
+                                </div>
+                            </div>
+                        </div>
+                        <div ClassName='CImages'>
+                            <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743098904/Mynewdawnschool/edu2_b4jjj0.jpg' alt="edu2" className='img' style={{ width: '100%' }} />
+                        </div> */}
+                    </div>
+                </div>
             </div>
         </div>
     )
