@@ -135,15 +135,21 @@
     text-align: justify;
 }
 .singlepost-img{
-    width: 80%;
+    width: 60%;
     overflow: hidden;
-    padding: 15px 0px;
-    height: 300px;
+    height: fit-content;
     margin-bottom: 30px;
+    border: 4mm ridge var(--blue2Color);
+    height: 500px;
+    max-height: 500px;
+    background: #bce2ff56;
 }
 .singlepost-img img{
     width: 100%;
-    height: 300px;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    filter: contrast(1)
 }
 
 

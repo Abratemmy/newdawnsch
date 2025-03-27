@@ -14,9 +14,9 @@
     color:var(--blueColor)
 }
 .footerpage .footer-text{
-    font-size: 16px;
-    padding: 10px 0px;
-    font-weight:550;
+    font-size: 15px;
+    padding: 10px 5px 0px 0px;
+    font-weight:500;
 }
 .footer-textcontactinfo{
     font-size: 15px!important;

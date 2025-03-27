@@ -1,0 +1,488 @@
+.custom-shape-divider-bottom-1742940439 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1742940439 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1742940439 .shape-fill {
+    fill: #FFFFFF;
+}
+.CEducation .topBanner {
+    display: block;
+    background: rgba(242, 246, 247, 1);
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 10px 0px 60px;
+}
+.CEducation .topBanner .header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CEducation .topBanner .header img{
+    width: 90px;
+}
+
+.CEducation .topBanner .wrapperDiv {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.CEducation .topBanner .wrapper{
+    max-width: 500px;
+    position: relative;
+}
+.CEducation .wrapperDiv .top2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .icon{
+        font-size: 20px;
+        color: var(--blueColor);
+    }
+    .text22{
+        font-size: 15px;
+        color: var(--blackColor);
+        font-family: var(--textFamily);
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 1150px) {
+    .CEducation .topBanner .wrapper{
+        max-width: 400px;
+    }  
+}
+
+.CEducation .wrapperDiv .title{
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.CEducation .wrapperDiv .text{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .CEducation .topBanner .wrapperDiv{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .CEducation .wrapperDiv .title{
+        font-size: xx-large;
+    }  
+}
+@media screen and (max-width: 768px) and (min-width: 991px) {
+    .CEducation .wrapperDiv .title{
+        font-size: 30px!important;
+    }  
+}
+.CEducation .buttonNav{
+    display: block;
+    border-style: solid;
+    border-radius: 50px;
+    z-index: 155;
+    width: fit-content;
+    padding: 0 25px;
+    height: 48px;
+    background-color: var(--blue2Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--blueColor);
+    border-width: 0px;
+    border-color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: var(--textFamily);
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.8s all ease;
+}
+.CEducation .buttonNav2{
+    background: var(--blueColor);
+    color: #fff
+}
+.CEducation .buttonNav:hover{
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+    border-width: 3px;
+}
+.CEducation .wrapperDiv .wrapperImage{
+    img{
+        width: 100%;
+        
+    }
+}
+.CEducation .alertShow{
+    position: absolute;
+    bottom: 55px;
+    background: #fff;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+    border-radius: 5px;
+    min-width: 150px;
+    padding: 10px;
+    transition: 0.4s all ease;
+    /* transform: translateY(20px);
+    transition-delay: 100ms; */
+}
+.CEducation .alertShow .subtitle{
+    font-size: 17px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 10px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.CEducation .alertShow .text{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+
+/* session 2 here */
+.CEducation .CSession2{
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    background-image: url('../../images/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 0px;
+    overflow-x: hidden;
+}
+.CEducation .CSession2 .Ccontent{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%
+}
+
+.CEducation .CSession2 .Ccontent .Ccard{
+    flex: 1!important;
+    max-width: 50%;
+}
+@media screen and (max-width: 800px) {
+    .CEducation .CSession2 .Ccontent{
+        flex-direction: column;
+    }
+    .CEducation .CSession2 .Ccontent .Ccard{
+        max-width: 100%;
+    }
+}
+.CEducation .CSession2 .Ccontent .Ccard .title{
+    font-size: xx-large;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--blackColor);
+}
+.CEducation .CSession2 .Ccontent .Ccard p{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+.CEducation .CSession2 .Ccontent .Ccard .programs{
+    padding-bottom: 20px;
+}
+.CEducation .CSession2 .Ccontent .Ccard .pTitle{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: var(--blackColor);
+}
+.CEducation .CSession2 .Ccontent .Ccard .pTitle span{
+    background: var(--blue2Color);
+    height: 10px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    margin-right: 8px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+.CEducation .CSession2 .Ccontent .Ccard .pText{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 10px;
+    line-height: 28px;
+}   
+.CEducation .CSession2 .Ccontent .Ccard .pText .logo{
+    font-size: 20px;
+    color: var(--blueColor);
+    font-weight: 700;
+}
+.CEducation .CSession2 .Ccontent .CImage img{
+    position: relative;
+    flex: 1!important;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+
+
+/* session3 starts here */
+.CEducation .CSession3{
+    position: relative;
+}
+.CEducation .CSession3 .Cservices{
+    background-color: var(--blueColor);
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+} 
+.CEducation .CSession3 .Cservices .title{
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+}
+.CSession3 .Csession3Wrapper .subtitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    padding: 10px 0px;
+    font-size: large
+}
+.CSession3 .Csession3Wrapper .left,
+.CSession3 .Csession3Wrapper .right{
+    width: 100px;
+    border-bottom: 3px solid var(--blue2Color);
+}
+.CSession3 .Csession3Wrapper{
+    display: block;
+    background: rgba(255, 255, 255, 0.41);
+    background-image: url('../../images/background2.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+}
+.CSession3 .Csession3Wrapper .title{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.CEducation .CSession3 .Cservices .subtitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    padding: 10px 0px;
+    font-size: large
+}
+.CEducation .CSession3 .subtitle .left,
+.CEducation .CSession3 .subtitle .right{
+    width: 100px;
+    border-bottom: 3px solid #fff;
+}
+.CSession3 .contentWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0px;
+    gap: 30px;
+}
+@media screen and (max-width: 992px) {
+    .CSession3 .contentWrapper{
+        flex-direction: column;
+    }
+    .CSession3 .contentWrapper2{
+        flex-direction: column-reverse;
+    }
+    
+}
+.CSession3 .contentWrapper .image{
+    flex:1;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+.CSession3 .contentWrapper .image img{
+    width: 100%;
+    z-index: 10;
+    border-radius: 20px;
+}
+.CSession3 .contentWrapper .image .absolute{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--blue2Color);
+    position: absolute;
+    right: 2px;
+    top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+.CSession3 .contentWrapper .content{
+    flex: 1;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+}
+.CSession3 .contentWrapper .content .title{
+    font-size: x-large;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--blackColor);
+    position: relative;
+    height: fit-content;
+}
+.CSession3 .contentWrapper .content .title .line{
+    display: block;
+    background: var(--blue2Color);
+    border-style: none;
+    border-radius: 0px;
+    z-index: 59;
+    width: 102px;
+    height: 4px;
+    position: absolute;
+    top: 40px
+}
+.CSession3 .contentWrapper .content .text{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 15px;
+    line-height: 28px;
+    
+}
+
+.Coursescard .content .title{
+    font-size: x-large;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--blackColor);
+    position: relative;
+    height: fit-content;
+    background: #fff;
+    padding: 10px 3px;
+    width: fit-content;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+.Coursescard .content .title .line{
+    display: block;
+    background: var(--blue2Color);
+    border-style: none;
+    border-radius: 0px;
+    z-index: 59;
+    width: 102px;
+    height: 4px;
+    position: absolute;
+    top: 40px;
+}
+.Coursescard .courseCard{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+@media screen and (max-width: 850px) {
+    .Coursescard .courseCard{
+        flex-direction: column;
+    }
+    
+}
+.Coursescard .courseCard .cardCourse{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+.Coursescard .courseCard .cardImage{
+    width: 100%;
+    object-fit: cover!important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Coursescard .courseCard .cardImage img{
+    width: 150px;
+    height:150px;
+    object-fit: contain;
+    border-radius: 100px;
+
+}
+.Coursescard .courseCard .cardAbs{
+    padding: 2px 10px;
+    text-align: center;
+}
+.Coursescard .courseCard .cardAbs .cardTitle{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: var(--blackColor);
+}   
+.Coursescard .courseCard .cardAbs .cardText{
+    font-size: 15px;
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding-bottom: 10px;
+    line-height: 28px;
+}

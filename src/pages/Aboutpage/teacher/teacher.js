@@ -21,7 +21,8 @@ function Teacher() {
 
                         <div className='col-lg-6 col-md-6 col-sm-12'>
                             <div className='director-content' >
-                                <span>Oladotun Ayedun </span>is the Director of MY NEWDAWN COLLEGE. He is a graduate of Educational Management from the prestigious University of Ibadan and graduated in the year 2001. After NYSC, he started his Educational career with De-peak College in 2003 and was there till 2006. In 2007, the vision of having a school started with the establishment of MY-NEWDAWN EDUCATIONAL CONSULT and the center has produced many graduates in different fields. He also obtained  another degree certificate in Adult Education in 2014. In 2020, the vision of having a school in order to give academic potentialities the actual breath 
+                                <span>Oladotun Ayedun </span>is the Director of MY NEWDAWN COLLEGE. He is a graduate of Educational Management from the prestigious University of Ibadan and graduated in the year 2001. 
+                                After NYSC, he started his Educational career with De-peak College in 2003 and was there till 2006. In 2007, the vision of having a school started with the establishment of MY-NEWDAWN EDUCATIONAL CONSULT and the center has produced many graduates in different fields. He also obtained  another degree certificate in Adult Education in 2014. In 2020, the vision of having a school in order to give academic potentialities the actual breath 
                                 of life became a reality and today we have students in different classes and more are still coming.
                             </div>
                         </div>
