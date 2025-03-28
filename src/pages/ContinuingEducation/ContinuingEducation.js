@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import "./ContinuingEducation.css";
 import { NavLink } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
-import { GiCheckMark } from "react-icons/gi";
-import course1 from '../../images/course1.jpg';
-import course2 from '../../images/course2.jpeg';
-import course3 from '../../images/course3.jpg';
+// import { GiCheckMark } from "react-icons/gi";
 
 function ContinuingEducation() {
     const [show, setShow] = useState(false);
@@ -174,9 +171,11 @@ function ContinuingEducation() {
 
                             <div className="content">
                                 <div className='title'>Verifiable Certificates <div className="line"></div></div>
-                                <div className='text'>
+                                <div className='text' style={{paddingBottom:'20px'}}>
                                     Verify certificates on our website.
                                 </div>
+
+                                <NavLink to="/certificate-verification-portal" className="buttonNav" >Verify Certificate </NavLink>
                             </div>
                         </div>
                     </div>
@@ -203,10 +202,9 @@ function ContinuingEducation() {
                         </div>
 
                         <div className="subtitle">Modules covered in class include:</div>
-                        <div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start' }}>
+                        <div className='moduleCourses'>
 
                             <ul style={{ width: '100%' }}>
-
                                 <li>Introduction to healthcare assistant </li>
                                 <li>Roles and responsibilities of caregiver</li>
                                 <li>Legal and ethical issues in caregiving </li>
@@ -226,19 +224,7 @@ function ContinuingEducation() {
 
                             </div>
                         </div>
-                        {/* <div>
-                            <div className='Ccard'>
-                                <div className='title'>Achieve Your Goals With Newdawn</div>
-                                <p>Our Continuing Education Department specializes in providing high-quality training programs for adults and professionals in the health sector. We focus on healthcare services, social caregiving, and safety training.</p>
-
-                                <div className='programs'>
-                                    <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743102262/Mynewdawnschool/Program_Length_xdzfux.png' alt="Program_Length" className='img' width='90%' />
-                                </div>
-                            </div>
-                        </div>
-                        <div ClassName='CImages'>
-                            <img src='https://res.cloudinary.com/hayteetech/image/upload/v1743098904/Mynewdawnschool/edu2_b4jjj0.jpg' alt="edu2" className='img' style={{ width: '100%' }} />
-                        </div> */}
+                    
                     </div>
                 </div>
             </div>

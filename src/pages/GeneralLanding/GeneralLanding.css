@@ -264,7 +264,7 @@
 .landingPage_about .WhatWeDo{
     display: block;
     background: rgba(255, 255, 255, 0);
-    background-image: url('../../images/background.png');
+    background-image: url('https://res.cloudinary.com/hayteetech/image/upload/v1743088598/Mynewdawnschool/background_v40vdb.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

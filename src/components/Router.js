@@ -14,13 +14,14 @@ import SinglePost from '../pages/blogpage/singlePost';
 import Gallery from '../pages/gallery/gallery';
 import GeneralLanding from '../pages/GeneralLanding/GeneralLanding';
 import ContinuingEducation from '../pages/ContinuingEducation/ContinuingEducation';
-
+import CertificateVerification from '../pages/CertificateVerification/CertificateVerification';
 
 const Router = () => {
     return (
         <Routes>
             <Route exact path="/" caseSensitive={false} element={<GeneralLanding />} />
             <Route exact path="/education_program" caseSensitive={false} element={<ContinuingEducation />} />
+            <Route exact path='/certificate-verification-portal' caseSensitive={false} element={<CertificateVerification />} />
             <Route exact path="/college" caseSensitive={false} element={<Newhome />} />
             <Route exact path="/college/about" caseSensitive={false} element={<About />} />
             <Route exact path='/college/contact' caseSensitive={false} element={<Contact />} />

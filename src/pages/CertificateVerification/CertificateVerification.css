@@ -1,0 +1,201 @@
+.VerificationPage{
+    position:relative;
+    width: 100%;
+}
+.VerificationPage .verifyBanner{
+    background:  linear-gradient(
+        to left top, 
+        rgba(188, 226, 255, 0.3), 
+        rgba(188, 226, 255, 0.8)
+    ),url('../../images/verify.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.VerificationPage .verifyBanner .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.VerificationPage .verifyBanner .header img{
+    width: 30%;
+}
+.VerificationPage .verifyBanner .header .links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background: var(--blueColor);
+    padding: 15px 100px 15px 30px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px
+}
+
+.VerificationPage .verifyBanner .header .headerLink{
+    text-decoration: none;
+    font-family: var(--textFamily);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    transition:0.5s all ease
+}
+.VerificationPage .verifyBanner .header .headerLink:hover{
+    color: var(--blue2Color);
+}
+.VerificationPage .verifyBanner .bannerText{
+    text-align: center;
+    padding-top: 5%;
+    text-transform: uppercase;
+    color: var(--blueColor);
+    font-weight: 700;
+    font-size: xx-large;
+}
+@media screen and (max-width: 750px){
+    .VerificationPage .verifyBanner .header img{
+        width: 20%;
+    }
+    .VerificationPage .verifyBanner .header .links{
+        top: 90px;
+        padding: 10px 50px 10px 10px;
+    }
+    .VerificationPage .verifyBanner .header .headerLink{
+        font-size: 13px
+    }
+    .VerificationPage .verifyBanner .bannerText{
+        padding-top: 15%;
+        font-size: x-large
+    }
+}
+@media screen and (max-width: 450px){
+    .VerificationPage .verifyBanner .header .links{
+        top: 110px;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .VerificationPage .verifyBanner .bannerText{
+        padding-top: 32%;
+        font-size: x-large
+    }
+}
+.VerificationPage .verifySession{
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    background-image: url('https://res.cloudinary.com/hayteetech/image/upload/v1743088598/Mynewdawnschool/background_v40vdb.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 0px;
+}
+.VerificationPage .verifySession .vText{
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 auto;
+    font-family: var(--textFamily);
+    font-size: large;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+}
+@media screen and (max-width: 650px){
+    .VerificationPage .verifySession .vText{
+        max-width: 100%;
+    }
+}
+.VerificationPage .verifySession .certificate label{
+    display: block;
+    font-family: var(--textFamily);
+    font-size: large;
+    padding: 40px 0px 10px 0px;
+    text-transform: uppercase;
+
+}
+.VerificationPage .verifySession .certificate input{
+    display: block;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+    border: 1px solid var(--blue2Color);
+    padding: 5px 15px;
+    font-family: var(--textFamily);
+    font-size: large;
+    color:rgb(75, 71, 71);
+    margin: 10px 0px 30px 0px;
+}
+.VerificationPage .verifySession .certificate button{
+    display: block;
+    border-style: solid;
+    border-radius: 50px;
+    z-index: 155;
+    width: 200px;
+    padding: 0 25px;
+    height: 48px;
+    background-color: var(--blue2Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--blueColor);
+    border-width: 0px;
+    border-color: #fff;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: var(--textFamily);
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s all ease;
+    text-transform: uppercase;
+}
+.VerificationPage .verifySession .certificate .showCertificate{
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    height: 250px;
+    position: relative;
+    box-shadow: 0 5px 29px rgba(90, 175, 240, 0.901);
+    max-width: 600px;
+    margin: 40px 0px
+}
+@media screen and (max-width: 650px){
+    .VerificationPage .verifySession .certificate .showCertificate{
+        max-width: 100%;
+    }
+}
+.VerificationPage .verifySession .certificate .showCertificate .text{
+    text-transform: uppercase;
+    font-size: large;
+}
+.VerificationPage .verifySession .certificate .showCertificate .spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.VerificationPage .verifySession .certificate .showCertificate .error{
+    font-size: xx-large;
+    color: red;
+    font-family: var(--textFamily);
+    text-align: center;
+}
