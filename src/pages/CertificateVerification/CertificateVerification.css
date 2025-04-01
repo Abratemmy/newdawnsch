@@ -139,6 +139,12 @@
     color:rgb(75, 71, 71);
     margin: 10px 0px 30px 0px;
 }
+
+@media screen and (max-width: 410px){
+    .VerificationPage .verifySession .certificate input{
+        width: 90%;
+    }
+}
 .VerificationPage .verifySession .certificate button{
     display: block;
     border-style: solid;
